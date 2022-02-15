@@ -41,7 +41,7 @@ public class FacultyController{
         return repo.findById(id);
     }
 
-    @DeleteMapping("/faculty/{id}")
+    @DeleteMapping("/deleteFaculty/{id}")
     public String removeFaculty(@PathVariable String id){
         repo.deleteById(id);
         return "Deleted Faculty";
