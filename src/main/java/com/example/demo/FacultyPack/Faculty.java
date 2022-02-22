@@ -15,16 +15,16 @@ public class Faculty {
     private String lname;
     private String department;
     private String email;
-    private List<Student> list;
+    //private List<Student> list;
 
 
-    public Faculty(String id, String fname, String lname, String department, String email, List<Student> list) {
+    public Faculty(String id, String fname, String lname, String department, String email /*, List<Student> list */) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
         this.department = department;
         this.email = email;
-        this.list = list;
+        //this.list = list;
     }
 
 
@@ -78,15 +78,16 @@ public class Faculty {
     }
 
 
-    public List<Student> getList() {
-        return list;
-    }
+    //public List<Student> getList() {
+        //return list;
+    //}
 
 
-    public void setList(List<Student> list) {
-        this.list = list;
-    }
+    //public void setList(List<Student> list) {
+        //this.list = list;
+    //}
     ////DO WE NEED TO HAVE THE FOLLOWING METHODS
+    /*
     public void addStudent(Student stu){
         list.add(stu);
     }
@@ -103,6 +104,7 @@ public class Faculty {
     public void setStudent(Student stu, int index){
         list.set(index, stu);
     }
+    */
 
     
 
