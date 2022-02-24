@@ -6,10 +6,10 @@ import java.util.Collection;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="users")
+@Document(collection= "users")
 public class UserModel {
 
-    @Id
+    @Id 
     private Long id;
     private String fName;
     private String lName;
@@ -18,6 +18,14 @@ public class UserModel {
     private Collection<Role> roles = new ArrayList<>();
 
     
+    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
+        this.id = id;
+        this.fName = fName;
+        this.lName = lName;
+        this.nwId = nwId;
+        this.password = password;
+        this.roles = roles;
+    }
     public Long getId() {
         return id;
     }
