@@ -46,20 +46,31 @@ public class LoadDataCLR implements CommandLineRunner {
                 }
                 
             } catch (Exception e) {
+                logger.error("Unable to save users");
+                logger.error(e);
+            }
+
+            try {
+
+                userService.addRoleToUser("travoltaj", "ROLE_USER");
+                userService.addRoleToUser("smithw", "ROLE_FACULTY");
+                userService.addRoleToUser("carryj", "ROLE_ADMIN");
+                userService.addRoleToUser("carryj", "ROLE_USER");
+                userService.addRoleToUser("carryj", "ROLE_FACULTY");
+                userService.addRoleToUser("reynoldsr", "ROLE_USER");
+
+                for(UserModel x : userService.getUsers()) {
+                    logger.error(x.getNwId() + " has " + x.getRoles().size() + " Role");
+                }
+
+            } catch (Exception e) {
+
                 logger.info("Unable to save users");
                 logger.info(e);
+
             }
 
-            userService.addRoleToUser("travoltaj", "ROLE_USER");
-            userService.addRoleToUser("smithw", "ROLE_FACULTY");
-            userService.addRoleToUser("carryj", "ROLE_ADMIN");
-            userService.addRoleToUser("carryj", "ROLE_USER");
-            userService.addRoleToUser("carryj", "ROLE_FACULTY");
-            userService.addRoleToUser("reynoldsr", "ROLE_USER");
-
-            for(UserModel x : userService.getUsers()) {
-                logger.info(x.getNwId() + " has " + x.getRoles().size() + " Role");
-            }
+            
         
 
         
