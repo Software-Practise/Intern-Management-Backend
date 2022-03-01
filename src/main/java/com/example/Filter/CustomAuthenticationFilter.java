@@ -1,5 +1,7 @@
 package com.example.Filter;
 
+import com.example.Filter.UsernameAndPasswordAuthenticationRequest;
+
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
@@ -35,15 +37,45 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
         this.authenticationManager = authenticationManager;
     }
 
+    // @Override
+    // public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
+    //         throws AuthenticationException {
+    //     String nwId = request.getParameter("nwId");
+    //     String password = request.getParameter("password");
+    //     log.info("NWID is :" + nwId);
+    //     log.info("Password is : " + password);
+    //     UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(nwId, password);
+    //     return authenticationManager.authenticate(authenticationToken);
+
+    // }
+
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
             throws AuthenticationException {
-        String nwId = request.getParameter("nwId");
-        String password = request.getParameter("password");
-        log.info("NWID is :" + nwId);
-        log.info("Password is : " + password);
-        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(nwId, password);
-        return authenticationManager.authenticate(authenticationToken);
+        // String nwId = request.getParameter("nwId");
+        // String password = request.getParameter("password");
+        // log.info("NWID is :" + nwId);
+        // log.info("Password is : " + password);
+        // UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(nwId, password);
+        // return authenticationManager.authenticate(authenticationToken);
+
+        try {
+            UsernameAndPasswordAuthenticationRequest authenticationRequest = new ObjectMapper()
+                    .readValue(request.getInputStream(), UsernameAndPasswordAuthenticationRequest.class);
+
+                    Authentication authentication = new UsernamePasswordAuthenticationToken(
+                        authenticationRequest.getNwId(),
+                        authenticationRequest.getPassword()
+                );
+    
+                log.info("NWID is :" + authenticationRequest.getNwId());
+                log.info("Password is : " + authenticationRequest.getPassword());
+                Authentication authenticate = authenticationManager.authenticate(authentication);
+                return authenticate;
+            
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
