@@ -78,6 +78,18 @@ public class FacultyController{
 
     }
 
+    @PostMapping("/comments")
+    public String addComments(@RequestBody Faculty fac){
+        facultyservice.saveFaculty(fac);
+        return "Updated Faculty: " + fac.getId();
+
+    }
+
+    @GetMapping("/getComments/{id}")
+    public List<String> getComments(@PathVariable String id){
+        return facultyservice.getCommentsById(id);
+    }
+
 
 }
 

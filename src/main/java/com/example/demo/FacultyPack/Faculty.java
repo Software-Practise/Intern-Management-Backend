@@ -15,16 +15,28 @@ public class Faculty {
     private String lname;
     private String department;
     private String email;
+    private List<String> comments;
     //private List<Student> list;
 
 
-    public Faculty(String id, String fname, String lname, String department, String email /*, List<Student> list */) {
+    public Faculty(String id, String fname, String lname, String department, String email, List<String> comments) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
         this.department = department;
         this.email = email;
+        this.comments = comments;
         //this.list = list;
+    }
+
+
+    public List<String> getComments() {
+        return comments;
+    }
+
+
+    public void setComments(List<String> comments) {
+        this.comments = comments;
     }
 
 
@@ -76,6 +88,8 @@ public class Faculty {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    
 
 
     //public List<Student> getList() {
