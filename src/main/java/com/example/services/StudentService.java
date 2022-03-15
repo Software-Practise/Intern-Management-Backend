@@ -11,5 +11,7 @@ public interface StudentService {
 
     UserModel getStudent(String nwId);
     List<UserModel> getStudents();
+    List<UserModel> getStudentByFaculty(String nwid);
+
     
 }

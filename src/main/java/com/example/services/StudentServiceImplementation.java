@@ -38,8 +38,21 @@ public class StudentServiceImplementation implements StudentService {
         Long role_id = role.getId();
         log.info("Role " + rtf + " id is " + role_id);
         List<UserModel> result = userRepository.findByRole(role_id, rtf);
-        log.info("Retrieve ALL" + result.size() + " Students from database");
+        log.info("Retrieve ALL " + result.size() + " Students from database");
         return result;
     }
+
+    @Override
+    public List<UserModel> getStudentByFaculty(String nwid) {
+        String rtf = "ROLE_USER";
+        Role role = roleRepository.findByName(rtf);
+        Long role_id = role.getId();
+        log.info("Role " + rtf + " id is " + role_id);
+        List<UserModel> result = userRepository.findStudentUnderFaculty(nwid, role_id, rtf);
+        log.info("Retrieve ALL " + result.size() + " Students under faculty " + nwid);
+        return result;
+    }
+
+    
     
 }

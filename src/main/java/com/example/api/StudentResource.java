@@ -30,6 +30,12 @@ public class StudentResource {
         return ResponseEntity.ok().body(studentService.getStudents());
     }
 
+    @GetMapping("/faculty/{nwid}/students")
+    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
+    public ResponseEntity<List<UserModel>> getStudentsByFaculty(@PathVariable String nwid) {
+        return ResponseEntity.ok().body(studentService.getStudentByFaculty(nwid));
+    }
+
     @GetMapping("/students/{nwId}")
     public ResponseEntity<UserModel> getStudentById(@PathVariable String nwId) {
         return ResponseEntity.ok().body(studentService.getStudent(nwId));
