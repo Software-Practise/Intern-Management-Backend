@@ -29,7 +29,7 @@ public class UserModel {
     private String status;
     private String level;
     private String offerLetter;
-    private String faculty_id;
+    private String facId;
 
     private long startDate;
     private long endDate;
@@ -48,7 +48,7 @@ public class UserModel {
     
     public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
             String street, String city, String state, String zipCode, String phoneNumber, String major, String status,
-            String level, String offerLetter, String faculty_id, long startDate, long endDate) {
+            String level, String offerLetter, String facId, long startDate, long endDate) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
@@ -64,7 +64,7 @@ public class UserModel {
         this.status = status;
         this.level = level;
         this.offerLetter = offerLetter;
-        this.faculty_id = faculty_id;
+        this.facId = facId;
         this.startDate = startDate;
         this.endDate = endDate;
     }
@@ -175,12 +175,12 @@ public class UserModel {
 
 
     public String getFaculty_id() {
-        return faculty_id;
+        return facId;
     }
 
 
     public void setFaculty_id(String faculty_id) {
-        this.faculty_id = faculty_id;
+        this.facId = faculty_id;
     }
 
     
