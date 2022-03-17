@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
+import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
 
@@ -28,6 +30,9 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private EmployerRepository employerRepository;
 
     // @Autowired
     // BCryptPasswordEncoder passwordEncoder;
@@ -104,6 +109,14 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
         log.info("Saving new User "+ userModel.getNwId() +" to the database");
         return userRepository.save(userModel);
     }
+
+    @Override
+    public EmployerModel saveEmployer(EmployerModel employer) {
+        // TODO Auto-generated method stub
+        return employerRepository.save(employer);
+    }
+
+
 
     public void clearDB() {
         userRepository.deleteAll();
