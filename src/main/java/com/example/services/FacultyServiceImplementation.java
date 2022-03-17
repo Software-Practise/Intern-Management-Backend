@@ -8,6 +8,7 @@ import com.example.model.UserModel;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
 
+import org.apache.catalina.User;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,31 @@ public class FacultyServiceImplementation implements FacultyService {
         List<UserModel> result = userRepository.findByRole(role_id, rtf);
         log.info("Retrieve ALL " + result.size() + " Faculty from database");
         return result;
+    }
+
+    public String updateFaculty(UserModel user){
+        userRepository.save(user);
+        return "Updated user";
+    }
+
+    public String deleteFaculty(UserModel user){
+        userRepository.deleteById(user.getId());
+        return "Deleted user";
+    }
+
+    public String addFaculty(UserModel user){
+        userRepository.save(user);
+        return "Added user";
+    }
+
+    public List<UserModel> getFacultyByfName(String fname){
+        return userRepository.findByfName(fname);
+    }
+    public List<UserModel> getFacultyBylName(String lname){
+        return userRepository.findBylName(lname);
+    }
+    public UserModel getFacultyByEmail(String email){
+        return userRepository.findByemail(email);
     }
 /*
     @Override

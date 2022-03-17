@@ -13,6 +13,9 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends MongoRepository<UserModel, Long> {
     UserModel findBynwId(@Param("nwId") String nwId);
     UserModel findByfacId(@Param("facId") String facId);
+    List<UserModel> findByfName(@Param("fName") String fName);
+    List<UserModel> findBylName(@Param("lName") String lName);
+
     
     @Query("{'roles':{'id': ?0, 'name': ?1}}")
     List<UserModel> findByRole(Long id, String name);

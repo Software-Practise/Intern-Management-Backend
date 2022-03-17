@@ -11,4 +11,11 @@ public interface FacultyService {
     
     UserModel getFaculty(String faculty_id);
     List<UserModel> getFaculty();
+    String addFaculty(UserModel user);
+    String updateFaculty(UserModel user);
+    String deleteFaculty(UserModel user);
+    List<UserModel> getFacultyByfName(String fName);
+    List<UserModel> getFacultyBylName(String lName);
+    UserModel getFacultyByEmail(String email);
+    List<UserModel> getFacultyByDept(String dept);
 }

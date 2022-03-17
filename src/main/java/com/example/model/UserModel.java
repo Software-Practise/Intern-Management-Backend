@@ -16,6 +16,8 @@ public class UserModel {
     private String lName;
     private String nwId;
     private String password;
+    private String email;
+    private String dept;
     private Collection<Role> roles = new ArrayList<>();
 
     private String street;
@@ -36,17 +38,19 @@ public class UserModel {
 
 
     @PersistenceConstructor
-    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
+    public UserModel( Long id, String fName, String lName, String nwId, /*String email, String dept,*/ String password, Collection<Role> roles) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.nwId = nwId;
         this.password = password;
         this.roles = roles;
+        //this.email = email;
+        //this.dept = dept;
     }
 
     
-    public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
+    public UserModel(Long id, String fName, String lName, String nwId, String email, String dept, String password, Collection<Role> roles,
             String street, String city, String state, String zipCode, String phoneNumber, String major, String status,
             String level, String offerLetter, String facId, long startDate, long endDate) {
         this.id = id;
@@ -67,9 +71,23 @@ public class UserModel {
         this.facId = facId;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.email = email;
+        this.dept = dept;
     }
 
 
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getDept() {
+        return dept;
+    }
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
     public Long getId() {
         return id;
     }
