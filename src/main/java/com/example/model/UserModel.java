@@ -34,7 +34,7 @@ public class UserModel {
     private long startDate;
     private long endDate;
     
-    private String employer;
+    private EmployerModel employer;
 
     @PersistenceConstructor
     public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
@@ -49,7 +49,7 @@ public class UserModel {
     
     public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
             String street, String city, String state, String zipCode, String phoneNumber, String major, String status,
-            String level, String offerLetter, String faculty_id, long startDate, long endDate, String employer) {
+            String level, String offerLetter, String faculty_id, long startDate, long endDate, EmployerModel employer) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
@@ -186,10 +186,10 @@ public class UserModel {
     }
 
     
-    public String getEmployer() {
+    public EmployerModel getEmployer() {
         return employer;
     }
-    public void setEmployer(String employer) {
+    public void setEmployer(EmployerModel employer) {
         this.employer = employer;
     }    
 }

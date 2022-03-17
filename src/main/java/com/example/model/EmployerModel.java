@@ -1,8 +1,5 @@
 package com.example.model;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,8 +11,6 @@ public class EmployerModel {
     private Long id;
     private String fName, lName;
     private String employerId;
-    private String password;
-    private Collection<Role> roles = new ArrayList<>();
 
     private String street;
     private String city;
@@ -23,38 +18,34 @@ public class EmployerModel {
     private String zipCode;
     private String phoneNumber;
     private String email;
-    private String company;
-    private String position;
+    
+
+    private String companyName;
 
 
 
     @PersistenceConstructor
-    public EmployerModel( Long id, String fName, String lName, String employerId, String password, Collection<Role> roles) {
+    public EmployerModel( Long id, String fName, String lName, String employerId) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.employerId = employerId;
-        this.password = password;
-        this.roles = roles;
     }
 
-    public EmployerModel(Long id, String fName, String lName, String employerId, String password, Collection<Role> roles,
-            String street, String city, String state, String zipCode, String phoneNumber,
-            String email, String company, String position) {
+    public EmployerModel(Long id, String fName, String lName, String employerId, String street, 
+            String city, String state, String zipCode, String phoneNumber,
+            String email, String companyName) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.employerId = employerId;
-        this.password = password;
-        this.roles = roles;
         this.street = street;
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
         this.phoneNumber = phoneNumber;
         this.email = email;
-        this.company = company;
-        this.position = position;
+        this.companyName = companyName;
         }
 
     public Long getId() {
@@ -80,18 +71,6 @@ public class EmployerModel {
     }
     public void setEmployerId(String nwId) {
         this.employerId = nwId;
-    }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    public Collection<Role> getRoles() {
-        return roles;
-    }
-    public void setRoles(Collection<Role> roles) {
-        this.roles = roles;
     }
     public String getStreet() {
         return street;
@@ -129,16 +108,10 @@ public class EmployerModel {
     public void setEmail(String email) {
         this.email = email;
     }
-    public String getCompany() {
-        return company;
+    public String getCompanyName() {
+        return companyName;
     }
-    public void setCompany(String company) {
-        this.company = company;
-    }
-    public String getPosition() {
-        return position;
-    }
-    public void setPosition(String position) {
-        this.position = position;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 }
