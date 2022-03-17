@@ -13,7 +13,7 @@ public class EmployerModel {
     @Id
     private Long id;
     private String fName, lName;
-    private String nwId;
+    private String employerId;
     private String password;
     private Collection<Role> roles = new ArrayList<>();
 
@@ -21,38 +21,40 @@ public class EmployerModel {
     private String city;
     private String state;
     private String zipCode;
-    private String workPhone;
-    private String cellPhone;
+    private String phoneNumber;
     private String email;
+    private String company;
+    private String position;
 
 
 
     @PersistenceConstructor
-    public EmployerModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
+    public EmployerModel( Long id, String fName, String lName, String employerId, String password, Collection<Role> roles) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
-        this.nwId = nwId;
+        this.employerId = employerId;
         this.password = password;
         this.roles = roles;
     }
 
-    public EmployerModel(Long id, String fName, String lName, String nwId, String password, Collection<Roles> roles,
-            String street, String city, String state, String zipCode, String workPhone,
-            String cellPhone, String email) {
+    public EmployerModel(Long id, String fName, String lName, String employerId, String password, Collection<Role> roles,
+            String street, String city, String state, String zipCode, String phoneNumber,
+            String email, String company, String position) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
-        this.nwId = nwId;
+        this.employerId = employerId;
         this.password = password;
         this.roles = roles;
         this.street = street;
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
-        this.workPhone = workPhone;
-        this.cellPhone = cellPhone;
+        this.phoneNumber = phoneNumber;
         this.email = email;
+        this.company = company;
+        this.position = position;
         }
 
     public Long getId() {
@@ -73,11 +75,11 @@ public class EmployerModel {
     public void setlName(String lName) {
         this.lName = lName;
     }
-    public String getNwId() {
-        return nwId;
+    public String getEmployerId() {
+        return employerId;
     }
-    public void setNwId(String nwId) {
-        this.nwId = nwId;
+    public void setEmployerId(String nwId) {
+        this.employerId = nwId;
     }
     public String getPassword() {
         return password;
@@ -90,5 +92,53 @@ public class EmployerModel {
     }
     public void setRoles(Collection<Role> roles) {
         this.roles = roles;
+    }
+    public String getStreet() {
+        return street;
+    }
+    public void setStreet(String street) {
+        this.street = street;
+    }
+    public String getCity() {
+        return city;
+    }
+    public void setCity(String city) {
+        this.city = city;
+    }
+    public String getState() {
+        return state;
+    }
+    public void setState(String state) {
+        this.state = state;
+    }
+    public String getZipCode() {
+        return zipCode;
+    }
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getCompany() {
+        return company;
+    }
+    public void setCompany(String company) {
+        this.company = company;
+    }
+    public String getPosition() {
+        return position;
+    }
+    public void setPosition(String position) {
+        this.position = position;
     }
 }
