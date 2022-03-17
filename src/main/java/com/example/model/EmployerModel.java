@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection= "Employers")
+@Document(collection= "employers")
 public class EmployerModel {
     
     @Id

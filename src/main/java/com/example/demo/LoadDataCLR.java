@@ -35,6 +35,8 @@ public class LoadDataCLR implements CommandLineRunner {
         UserModel cavillh = new UserModel(new Random().nextLong(),"Henry", "Cavill", "cavillh", "1234", new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "In Progress", "Undergraduate", "This is an offer Letter", smithw.getNwId(), 456789, 23456789, steveJ);
             try {
                 if(userService.getUsers().size() == 0) {
+
+                userService.saveEmployer(steveJ);
                 userService.saveRole(new Role(new Random().nextLong(), "ROLE_USER"));
                 userService.saveRole(new Role(new Random().nextLong(), "ROLE_FACULTY"));
                 userService.saveRole(new Role(new Random().nextLong(), "ROLE_ADMIN"));

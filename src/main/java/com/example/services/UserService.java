@@ -2,6 +2,7 @@ package com.example.services;
 
 import java.util.List;
 
+import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
 
@@ -12,6 +13,7 @@ public interface UserService {
 
     UserModel saveUser(UserModel userModel);
     Role saveRole(Role role);
+    EmployerModel saveEmployer(EmployerModel employer);
     void addRoleToUser(String nwId, String roleName);
     UserModel getUser(String nwId);
     List<UserModel> getUsers();

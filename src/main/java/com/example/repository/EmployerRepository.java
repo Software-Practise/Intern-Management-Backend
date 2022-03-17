@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployerRepository extends MongoRepository<EmployerModel, Long> {
-    EmployerModel findByemployerId(@Param("employer_id") String employerId);
+    EmployerModel findByemployerId(@Param("employerId") String employerId);
 
 }
