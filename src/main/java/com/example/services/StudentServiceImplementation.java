@@ -1,7 +1,9 @@
 package com.example.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import com.example.model.Application;
 import com.example.model.Role;
 import com.example.model.UserModel;
 import com.example.repository.RoleRepository;
@@ -53,6 +55,21 @@ public class StudentServiceImplementation implements StudentService {
         return result;
     }
 
-    
+    public void addAplication(String nwId, Application application) {
+        UserModel user = userRepository.findBynwId(nwId);
+        user.getApplications().add(application);
+        userRepository.save(user);
+    }
+
+    public void dropApplication(String nwId, Long appId) {
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        for(Application app: applications) {
+            if(app.getAppId() == appId) {
+                app.setStatus("Dropped");
+            }
+        }
+        
+    }
     
 }

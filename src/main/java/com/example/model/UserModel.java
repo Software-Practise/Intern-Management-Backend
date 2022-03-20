@@ -18,6 +18,8 @@ public class UserModel {
     private String password;
     private Collection<Role> roles = new ArrayList<>();
 
+    private ArrayList<Application> applications = new ArrayList<>();
+
     private String street;
     private String city;
     private String state;
@@ -69,6 +71,25 @@ public class UserModel {
         this.startDate = startDate;
         this.endDate = endDate;
         this.employer = employer;
+    }
+
+    public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
+            ArrayList<Application> applications, String street, String city, String state, String zipCode,
+            String phoneNumber, String major, String level) {
+        this.id = id;
+        this.fName = fName;
+        this.lName = lName;
+        this.nwId = nwId;
+        this.password = password;
+        this.roles = roles;
+        this.applications = applications;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
+        this.phoneNumber = phoneNumber;
+        this.major = major;
+        this.level = level;
     }
 
 
@@ -191,5 +212,17 @@ public class UserModel {
     }
     public void setEmployer(EmployerModel employer) {
         this.employer = employer;
+    }
+
+
+    public ArrayList<Application> getApplications() {
+        return applications;
+    }
+
+
+    public void setApplications(ArrayList<Application> applications) {
+        this.applications = applications;
     }    
+
+    
 }
