@@ -7,7 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection= "employers")
 public class EmployerModel {
     
-    @Id
+    @Id 
+    
     private Long id;
     private String fName, lName;
     private String employerId;

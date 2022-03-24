@@ -1,6 +1,7 @@
 package com.example.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.PersistenceConstructor;
 
 public class Application {
 
@@ -22,6 +23,7 @@ public class Application {
     
     private EmployerModel employer;
 
+    @PersistenceConstructor
     public Application(Long appId, String status, String offerLetter, String faculty_id, long startDate, long endDate,
             String term, int year, int crn, int section, int creditHour, String courseTitle, boolean paid,
             boolean unpaid, EmployerModel employer) {

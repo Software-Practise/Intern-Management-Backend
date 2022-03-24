@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.model.Application;
+import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
 import com.example.repository.RoleRepository;
@@ -55,13 +56,16 @@ public class StudentServiceImplementation implements StudentService {
         return result;
     }
 
-    public void addAplication(String nwId, Application application) {
+    @Override
+    public UserModel addApplication(String nwId, Application application) {
         UserModel user = userRepository.findBynwId(nwId);
         user.getApplications().add(application);
-        userRepository.save(user);
+        log.info("Add new Application " + application.getAppId() + " to " + nwId );
+        return userRepository.save(user);
     }
 
-    public void dropApplication(String nwId, Long appId) {
+    @Override
+    public UserModel dropApplication(String nwId, Long appId) {
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         for(Application app: applications) {
@@ -69,7 +73,24 @@ public class StudentServiceImplementation implements StudentService {
                 app.setStatus("Dropped");
             }
         }
+        log.info("Drop Application " + appId + " to " + nwId );
+        return userRepository.save(user);
         
     }
+
+    @Override
+    public UserModel addEmployerToStudent(String nwId, Long appId, EmployerModel employer) {
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        for(Application app: applications) {
+            if(app.getAppId() == appId) {
+                app.setEmployer(employer);
+            }
+        }
+        log.info("Added Employer for "+ nwId + " to " + appId );
+        return userRepository.save(user);
+    }
+
+    
     
 }
