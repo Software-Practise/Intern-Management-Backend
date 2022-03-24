@@ -19,8 +19,12 @@ public class UserModel {
     private Collection<Role> roles = new ArrayList<>();
 
     private ArrayList<Application> applications = new ArrayList<>();
+    private ArrayList<Comment> comments = new ArrayList<>();
 
     private String street;
+    
+
+
     private String city;
     private String state;
     private String zipCode;
@@ -74,6 +78,25 @@ public class UserModel {
     }
 
     public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
+            ArrayList<Application> applications, ArrayList<Comment> comments, String street, String city, String state, String zipCode,
+            String phoneNumber, String major, String level) {
+        this.id = id;
+        this.fName = fName;
+        this.lName = lName;
+        this.nwId = nwId;
+        this.password = password;
+        this.roles = roles;
+        this.applications = applications;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
+        this.phoneNumber = phoneNumber;
+        this.major = major;
+        this.level = level;
+        this.comments = comments;
+    }
+    public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
             ArrayList<Application> applications, String street, String city, String state, String zipCode,
             String phoneNumber, String major, String level) {
         this.id = id;
@@ -90,6 +113,7 @@ public class UserModel {
         this.phoneNumber = phoneNumber;
         this.major = major;
         this.level = level;
+        //this.comments = comments;
     }
 
 
@@ -223,6 +247,15 @@ public class UserModel {
     public void setApplications(ArrayList<Application> applications) {
         this.applications = applications;
     }    
+
+    public ArrayList<Comment> getComments() {
+        return comments;
+    }
+
+
+    public void setComments(ArrayList<Comment> comments) {
+        this.comments = comments;
+    }
 
     
 }

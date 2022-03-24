@@ -8,6 +8,7 @@ import com.example.model.Role;
 import com.example.model.UserModel;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
+import com.example.model.Comment;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -71,5 +72,21 @@ public class StudentServiceImplementation implements StudentService {
         }
         
     }
-    
+
+    public Application getApplicationById(String nwId, Long appId){
+        UserModel user = userRepository.findBynwId(nwId);
+        //ArrayList<Application> applications = user.getApplications();
+        return getApplicationById(nwId, appId);
+    }
+
+    public List<Comment> getComments(String nwId){
+        return userRepository.findCommentBynwId(nwId);
+    }
+
+    public void addComment(String nwId, Comment comment){
+        UserModel user = userRepository.findBynwId(nwId);
+        user.getComments().add(comment);
+        userRepository.save(user);
+    }
+    //for comment do the same as application but only need nwid, commentid, facid, and message which is the string comment, also need timestamps
 }

@@ -4,6 +4,10 @@ import org.springframework.data.annotation.Id;
 
 public class Application {
 
+    ///In order for this to work make it be able to add an application similar to how roles did it.
+    // think of it like an application is openend and once submitted it creates an application here with all the data in it.
+    //This will need some api mapping in order to work then add the application to the specific user.
+
     @Id
     private Long appId;
     private String status;
