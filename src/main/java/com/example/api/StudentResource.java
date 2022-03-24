@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import lombok.Data;
+
 @RestController
 @RequestMapping("/api/student")
 public class StudentResource {
@@ -48,17 +50,20 @@ public class StudentResource {
     }
     
     @PostMapping("/students/{nwId}/addApplication")
-    public ResponseEntity<?> addApplication(@PathVariable String nwId,@RequestBody Application application) {
+    public ResponseEntity<?> addApplication(@PathVariable String nwId,@RequestBody NewApplication newApplication) {
+        //URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addApplication").toUriString());
+        //return ResponseEntity.created(uri).body(studentService.addApplication(nwId, application));
+        EmployerModel employer = studentService.saveEmployer(newApplication.getEmployerModel());
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addApplication").toUriString());
-        return ResponseEntity.created(uri).body(studentService.addApplication(nwId, application));
+        return ResponseEntity.created(uri).body(studentService.addApplication(nwId, employer.getId(), newApplication.getApplication()));
     }
 
 
-    @PostMapping("/students/{nwId}/addEmployerToApplication/{appId}")
-    public ResponseEntity<?> addEmployerToApplication(@PathVariable String nwId, @PathVariable Long appId, @RequestBody EmployerModel employer) {
-        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addEmployerToApplication/{appId}").toUriString());
-        return ResponseEntity.created(uri).body(studentService.addEmployerToStudent(nwId, appId, employer));
-    }
+    // @PostMapping("/students/{nwId}/addEmployerToApplication/{appId}")
+    // public ResponseEntity<?> addEmployerToApplication(@PathVariable String nwId, @PathVariable Long appId, @RequestBody EmployerModel employer) {
+    //     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addEmployerToApplication/{appId}").toUriString());
+    //     return ResponseEntity.created(uri).body(studentService.addEmployerToStudent(nwId, appId, employer));
+    // }
 
     @PostMapping("/students/{nwId}/dropApplication/{appId}")
     public ResponseEntity<?> dropApplication(@PathVariable String nwId, @PathVariable Long appId) {
@@ -66,4 +71,18 @@ public class StudentResource {
         return ResponseEntity.created(uri).body(studentService.dropApplication(appId));
         
     }
+}
+
+@Data
+class NewApplication {
+    Application application;
+    EmployerModel employerModel;
+    public Application getApplication() {
+        return application;
+    }
+
+    public EmployerModel getEmployerModel() {
+        return employerModel;
+    }
+ 
 }

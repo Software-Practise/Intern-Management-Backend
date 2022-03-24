@@ -8,6 +8,7 @@ import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
 import com.example.repository.ApplicationRepository;
+import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
 
@@ -27,6 +28,9 @@ public class StudentServiceImplementation implements StudentService {
 
     @Autowired
     private ApplicationRepository applicationRepository;
+
+    @Autowired
+    private EmployerRepository employerRepository;
 
     protected final Log log = LogFactory.getLog(getClass());
 
@@ -61,8 +65,9 @@ public class StudentServiceImplementation implements StudentService {
     }
 
     @Override
-    public Application addApplication(String nwId, Application application) {
+    public Application addApplication(String nwId, Long empId, Application application) {
         application.setNwId(nwId);
+        application.setEmpId(empId);
         // UserModel user = userRepository.findBynwId(nwId);
         // user.getApplications().add(application);
         // log.info("Add new Application " + application.getAppId() + " to " + nwId );
@@ -88,18 +93,16 @@ public class StudentServiceImplementation implements StudentService {
     }
 
     @Override
-    public UserModel addEmployerToStudent(String nwId, Long appId, EmployerModel employer) {
-
-
-        UserModel user = userRepository.findBynwId(nwId);
-        ArrayList<Application> applications = user.getApplications();
-        for(Application app: applications) {
-            if(app.getAppId() == appId) {
-                app.setEmployer(employer);
-            }
-        }
-        log.info("Added Employer for "+ nwId + " to " + appId );
-        return userRepository.save(user);
+    public EmployerModel saveEmployer(EmployerModel employer) {
+        // UserModel user = userRepository.findBynwId(nwId);
+        // ArrayList<Application> applications = user.getApplications();
+        // for(Application app: applications) {
+        //     if(app.getAppId() == appId) {
+        //         app.setEmployer(employer);
+        //     }
+        // }
+        // log.info("Added Employer for "+ nwId + " to " + appId );
+        return employerRepository.save(employer);
     }
 
     
