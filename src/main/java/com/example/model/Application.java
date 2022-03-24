@@ -25,12 +25,11 @@ public class Application {
     private boolean unpaid;
     private Long empId;
     
-    private EmployerModel employer;
 
     @PersistenceConstructor
     public Application(Long appId, String status, String offerLetter, String faculty_id, long startDate, long endDate,
             String term, int year, int crn, int section, int creditHour, String courseTitle, boolean paid,
-            boolean unpaid, EmployerModel employer) {
+            boolean unpaid) {
         this.appId = appId;
         this.status = status;
         this.offerLetter = offerLetter;
@@ -45,7 +44,6 @@ public class Application {
         this.courseTitle = courseTitle;
         this.paid = paid;
         this.unpaid = unpaid;
-        this.employer = employer;
     }
 
     public Long getAppId() {
@@ -158,14 +156,6 @@ public class Application {
 
     public void setUnpaid(boolean unpaid) {
         this.unpaid = unpaid;
-    }
-
-    public EmployerModel getEmployer() {
-        return employer;
-    }
-
-    public void setEmployer(EmployerModel employer) {
-        this.employer = employer;
     }
 
     public String getNwId() {

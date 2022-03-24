@@ -7,6 +7,7 @@ import com.example.model.Application;
 import com.example.model.EmployerModel;
 import com.example.model.UserModel;
 import com.example.services.StudentService;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -53,9 +54,10 @@ public class StudentResource {
     public ResponseEntity<?> addApplication(@PathVariable String nwId,@RequestBody NewApplication newApplication) {
         //URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addApplication").toUriString());
         //return ResponseEntity.created(uri).body(studentService.addApplication(nwId, application));
-        EmployerModel employer = studentService.saveEmployer(newApplication.getEmployerModel());
+        EmployerModel employer = studentService.saveEmployer(newApplication.getEmployer());
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addApplication").toUriString());
         return ResponseEntity.created(uri).body(studentService.addApplication(nwId, employer.getId(), newApplication.getApplication()));
+        //return ResponseEntity.created(uri).body(employer);
     }
 
 
@@ -75,13 +77,17 @@ public class StudentResource {
 
 @Data
 class NewApplication {
+    @JsonProperty("application")
     Application application;
+
+    @JsonProperty("employer")
     EmployerModel employerModel;
+
     public Application getApplication() {
         return application;
     }
 
-    public EmployerModel getEmployerModel() {
+    public EmployerModel getEmployer() {
         return employerModel;
     }
  
