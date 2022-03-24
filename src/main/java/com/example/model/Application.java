@@ -2,11 +2,14 @@ package com.example.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection="applications")
 public class Application {
 
     @Id
     private Long appId;
+    private String nwId;
     private String status;
     private String offerLetter;
     private String faculty_id;
@@ -20,6 +23,7 @@ public class Application {
     private String courseTitle;
     private boolean paid;
     private boolean unpaid;
+    private Long empId;
     
     private EmployerModel employer;
 
@@ -162,6 +166,22 @@ public class Application {
 
     public void setEmployer(EmployerModel employer) {
         this.employer = employer;
+    }
+
+    public String getNwId() {
+        return nwId;
+    }
+
+    public void setNwId(String nwId) {
+        this.nwId = nwId;
+    }
+
+    public Long getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(Long empId) {
+        this.empId = empId;
     }
 
     

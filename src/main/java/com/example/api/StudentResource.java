@@ -63,7 +63,7 @@ public class StudentResource {
     @PostMapping("/students/{nwId}/dropApplication/{appId}")
     public ResponseEntity<?> dropApplication(@PathVariable String nwId, @PathVariable Long appId) {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/dropApplication/{appId}").toUriString());
-        return ResponseEntity.created(uri).body(studentService.dropApplication(nwId, appId));
+        return ResponseEntity.created(uri).body(studentService.dropApplication(appId));
         
     }
 }

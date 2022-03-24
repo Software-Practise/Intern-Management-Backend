@@ -14,9 +14,9 @@ public interface StudentService {
     UserModel getStudent(String nwId);
     List<UserModel> getStudents();
     List<UserModel> getStudentByFaculty(String nwid);
-    UserModel addApplication(String nwId, Application application);
-    UserModel dropApplication(String nwId, Long appId);
-    UserModel addEmployerToStudent(String nwId, Long appId, EmployerModel employer);
+    Application addApplication(String nwId, Application application);
+    Application dropApplication(Long appId);
+    UserModel addEmployerToStudent(String nwId, EmployerModel employer);
 
 
     

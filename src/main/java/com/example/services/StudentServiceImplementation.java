@@ -7,6 +7,7 @@ import com.example.model.Application;
 import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
+import com.example.repository.ApplicationRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
 
@@ -23,6 +24,9 @@ public class StudentServiceImplementation implements StudentService {
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private ApplicationRepository applicationRepository;
 
     protected final Log log = LogFactory.getLog(getClass());
 
@@ -57,29 +61,36 @@ public class StudentServiceImplementation implements StudentService {
     }
 
     @Override
-    public UserModel addApplication(String nwId, Application application) {
-        UserModel user = userRepository.findBynwId(nwId);
-        user.getApplications().add(application);
-        log.info("Add new Application " + application.getAppId() + " to " + nwId );
-        return userRepository.save(user);
+    public Application addApplication(String nwId, Application application) {
+        application.setNwId(nwId);
+        // UserModel user = userRepository.findBynwId(nwId);
+        // user.getApplications().add(application);
+        // log.info("Add new Application " + application.getAppId() + " to " + nwId );
+        return applicationRepository.save(application);
     }
 
     @Override
-    public UserModel dropApplication(String nwId, Long appId) {
-        UserModel user = userRepository.findBynwId(nwId);
-        ArrayList<Application> applications = user.getApplications();
-        for(Application app: applications) {
-            if(app.getAppId() == appId) {
-                app.setStatus("Dropped");
-            }
-        }
-        log.info("Drop Application " + appId + " to " + nwId );
-        return userRepository.save(user);
+    public Application dropApplication(Long appId) {
+        Application app = applicationRepository.findByAppId(appId);
+        app.setStatus("DROPPED");
+        return applicationRepository.save(app);
+
+        // UserModel user = userRepository.findBynwId(nwId);
+        // ArrayList<Application> applications = user.getApplications();
+        // for(Application app: applications) {
+        //     if(app.getAppId() == appId) {
+        //         app.setStatus("Dropped");
+        //     }
+        // }
+        // log.info("Drop Application " + appId + " to " + nwId );
+        // return userRepository.save(user);
         
     }
 
     @Override
     public UserModel addEmployerToStudent(String nwId, Long appId, EmployerModel employer) {
+
+
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         for(Application app: applications) {
