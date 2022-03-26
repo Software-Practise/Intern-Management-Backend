@@ -16,6 +16,8 @@ public class UserModel {
     private String lName;
     private String nwId;
     private String password;
+    private String email;
+    private String dept;
     private Collection<Role> roles = new ArrayList<>();
 
     private String street;
@@ -29,7 +31,7 @@ public class UserModel {
     private String status;
     private String level;
     private String offerLetter;
-    private String faculty_id;
+    private String facId;
 
     private long startDate;
     private long endDate;
@@ -37,19 +39,22 @@ public class UserModel {
     private EmployerModel employer;
 
     @PersistenceConstructor
-    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
+    public UserModel( Long id, String fName, String lName, String nwId, /*String email, String dept,*/ String password, Collection<Role> roles) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.nwId = nwId;
         this.password = password;
         this.roles = roles;
+        //this.email = email;
+        //this.dept = dept;
     }
 
     
-    public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
+    public UserModel(Long id, String fName, String lName, String nwId, String email, String dept, String password, Collection<Role> roles,
             String street, String city, String state, String zipCode, String phoneNumber, String major, String status,
-            String level, String offerLetter, String faculty_id, long startDate, long endDate, EmployerModel employer) {
+            String level, String offerLetter, String facId, long startDate, long endDate, EmployerModel employer) {
+
         this.id = id;
         this.fName = fName;
         this.lName = lName;
@@ -65,13 +70,27 @@ public class UserModel {
         this.status = status;
         this.level = level;
         this.offerLetter = offerLetter;
-        this.faculty_id = faculty_id;
+        this.facId = facId;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.email = email;
+        this.dept = dept;
         this.employer = employer;
     }
 
 
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getDept() {
+        return dept;
+    }
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
     public Long getId() {
         return id;
     }
@@ -177,12 +196,12 @@ public class UserModel {
 
 
     public String getFaculty_id() {
-        return faculty_id;
+        return facId;
     }
 
 
     public void setFaculty_id(String faculty_id) {
-        this.faculty_id = faculty_id;
+        this.facId = faculty_id;
     }
 
     
