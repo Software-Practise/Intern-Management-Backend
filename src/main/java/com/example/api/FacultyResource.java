@@ -34,10 +34,10 @@ public class FacultyResource {
 
     protected final Log log = LogFactory.getLog(getClass());
 
-    @GetMapping("/facultys")
+    @GetMapping("/faculties")
     @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
     public ResponseEntity<List<UserModel>> getFaculty() {
-        return ResponseEntity.ok().body(facultyService.getFaculty());
+        return ResponseEntity.ok().body(facultyService.getAllFaculty());
     }
 /*
     @GetMapping("/faculty/{nwid}/students")
@@ -46,7 +46,7 @@ public class FacultyResource {
         return ResponseEntity.ok().body(facultyService.getStudentByFaculty(nwid));
     }
 */
-    @GetMapping("/faculty/{facId}")
+    @GetMapping("/faculties/{facId}")
     public ResponseEntity<UserModel> getFacultyById(@PathVariable String facId) {
         return ResponseEntity.ok().body(facultyService.getFaculty(facId));
     }
@@ -54,33 +54,34 @@ public class FacultyResource {
     ////   POTENTIAL ERRORS HERE
     ////   POTENTIAL ERRORS HERE 
     ////   PORTENTIAL ERRORS HERE 
-    @PostMapping("/faculty/add")
+    @PostMapping("/faculties/add")
     public ResponseEntity<UserModel> saveUser(@RequestBody UserModel user) {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/user/save").toUriString());
         return ResponseEntity.created(uri).body(userService.saveUser(user));
     }
-    @DeleteMapping("/faculty/delete/{facId}")
+
+    @DeleteMapping("/faculties/delete/{facId}")
     public String deleteUser(@PathVariable String facId){
         return facultyService.deleteFaculty(facId);
     }
-    @PostMapping("/faculty/update")
+    @PostMapping("/faculties/update")
     public String updateUser(@RequestBody UserModel user){
         return facultyService.updateFaculty(user);
     }
-    @GetMapping("/faculty/f{fName}")
+    @GetMapping("/faculties/{fName}")
     public ResponseEntity<List<UserModel>> getFacultyByfName(@PathVariable String fName){
         return ResponseEntity.ok().body(facultyService.getFacultyByfName(fName));
     }
 
-    @GetMapping("/faculty/l{lName}")
+    @GetMapping("/faculties/l{lName}")
     public ResponseEntity<List<UserModel>> getFacultyBylName(@PathVariable String lName){
         return ResponseEntity.ok().body(facultyService.getFacultyBylName(lName));
     }
-    @GetMapping("/faculty/e{email}")
+    @GetMapping("/faculties/e{email}")
     public ResponseEntity<UserModel> getFacultyByEmail(@PathVariable String email){
         return ResponseEntity.ok().body(facultyService.getFacultyByEmail(email));
     }
-    @GetMapping("/faculty/d{dept}")
+    @GetMapping("/faculties/d{dept}")
     public ResponseEntity<List<UserModel>> getFacultyByDept(@PathVariable String dept){
         return ResponseEntity.ok().body(facultyService.getFacultyByDept(dept));
     }

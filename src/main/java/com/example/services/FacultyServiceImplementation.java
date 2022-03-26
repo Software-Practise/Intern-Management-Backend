@@ -28,11 +28,12 @@ public class FacultyServiceImplementation implements FacultyService {
     @Override
     public UserModel getFaculty(String faculty_id) {
         log.info("Retrieve user " + faculty_id + " from database");
-        return userRepository.findByfacId(faculty_id);
+        UserModel result = userRepository.findBynwId(faculty_id);
+        return result;
     }
 
     @Override
-    public List<UserModel> getFaculty() {
+    public List<UserModel> getAllFaculty() {
         // TODO Auto-generated method stub
         
         String rtf = "ROLE_FACULTY";
@@ -49,8 +50,8 @@ public class FacultyServiceImplementation implements FacultyService {
         return "Updated user";
     }
 
-    public String deleteFaculty(UserModel user){
-        userRepository.deleteById(user.getId());
+    public String deleteFaculty(String facId){
+        userRepository.deleteById(facId);
         return "Deleted user";
     }
 
@@ -81,5 +82,11 @@ public class FacultyServiceImplementation implements FacultyService {
     }
 
     */
+
+    @Override
+    public List<UserModel> getFacultyByDept(String dept) { 
+        return userRepository.findBydept(dept);
+    }
+    
     
 }
