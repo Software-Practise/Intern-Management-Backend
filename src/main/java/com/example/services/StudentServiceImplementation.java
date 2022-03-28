@@ -54,18 +54,22 @@ public class StudentServiceImplementation implements StudentService {
     }
 
     @Override
-    public List<UserModel> getStudentByFaculty(String nwid) {
-        String rtf = "ROLE_USER";
-        Role role = roleRepository.findByName(rtf);
-        Long role_id = role.getId();
-        log.info("Role " + rtf + " id is " + role_id);
-        List<UserModel> result = userRepository.findStudentUnderFaculty(nwid, role_id, rtf);
-        log.info("Retrieve ALL " + result.size() + " Students under faculty " + nwid);
-        return result;
+    public List<Application> getStudentByFaculty(String nwid) {
+        List<Application> res = applicationRepository.findStudentsByFaculty(nwid);
+        return res;
+
+        // String rtf = "ROLE_USER";
+        // Role role = roleRepository.findByName(rtf);
+        // Long role_id = role.getId();
+        // log.info("Role " + rtf + " id is " + role_id);
+        // List<UserModel> result = userRepository.findStudentUnderFaculty(nwid, role_id, rtf);
+        // log.info("Retrieve ALL " + result.size() + " Students under faculty " + nwid);
+        // return result;
     }
 
     @Override
     public Application addApplication(String nwId, Long empId, Application application) {
+
         application.setNwId(nwId);
         application.setEmpId(empId);
         // UserModel user = userRepository.findBynwId(nwId);
@@ -92,6 +96,8 @@ public class StudentServiceImplementation implements StudentService {
         
     }
 
+
+
     @Override
     public EmployerModel saveEmployer(EmployerModel employer) {
         // UserModel user = userRepository.findBynwId(nwId);
@@ -105,6 +111,13 @@ public class StudentServiceImplementation implements StudentService {
         return employerRepository.save(employer);
     }
 
+    @Override
+    public List<Application> getAllApplications() {
+        // TODO Auto-generated method stub
+        return applicationRepository.findAll();
+    }
+
+    
     
     
 }

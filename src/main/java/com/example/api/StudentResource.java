@@ -41,7 +41,7 @@ public class StudentResource {
 
     @GetMapping("/faculty/{nwid}/students")
     @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
-    public ResponseEntity<List<UserModel>> getStudentsByFaculty(@PathVariable String nwid) {
+    public ResponseEntity<List<Application>> getStudentsByFaculty(@PathVariable String nwid) {
         return ResponseEntity.ok().body(studentService.getStudentByFaculty(nwid));
     }
 
@@ -72,6 +72,11 @@ public class StudentResource {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/dropApplication/{appId}").toUriString());
         return ResponseEntity.created(uri).body(studentService.dropApplication(appId));
         
+    }
+
+    @GetMapping("/students/application")
+    public ResponseEntity<?> getAllApplications(){
+        return ResponseEntity.ok().body(studentService.getAllApplications());
     }
 }
 

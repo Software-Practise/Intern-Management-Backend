@@ -16,6 +16,8 @@ public class UserModel {
     private String lName;
     private String nwId;
     private String password;
+    private String email;
+    private String dept;
     private Collection<Role> roles = new ArrayList<>();
 
     private ArrayList<Application> applications = new ArrayList<>();
@@ -33,19 +35,22 @@ public class UserModel {
     //private String offerLetter;
     //private String faculty_id;
 
+
     //private long startDate;
     //private long endDate;
     
     //private EmployerModel employer;
 
-    @PersistenceConstructor
-    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
+    // @PersistenceConstructor
+    public UserModel( Long id, String fName, String lName, String nwId, /*String email, String dept,*/ String password, Collection<Role> roles) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.nwId = nwId;
         this.password = password;
         this.roles = roles;
+        //this.email = email;
+        //this.dept = dept;
     }
 
     
@@ -73,7 +78,8 @@ public class UserModel {
     //     this.employer = employer;
     // }
 
-    public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
+    @PersistenceConstructor
+    public UserModel(Long id, String fName, String lName, String nwId,String email, String dept, String password, Collection<Role> roles,
             ArrayList<Application> applications, String street, String city, String state, String zipCode,
             String phoneNumber, String major, String level) {
         this.id = id;
@@ -90,9 +96,23 @@ public class UserModel {
         this.phoneNumber = phoneNumber;
         this.major = major;
         this.level = level;
+        this.email = email;
+        this.dept = dept;
     }
 
 
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getDept() {
+        return dept;
+    }
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
     public Long getId() {
         return id;
     }
@@ -219,10 +239,10 @@ public class UserModel {
         return applications;
     }
 
-
     public void setApplications(ArrayList<Application> applications) {
         this.applications = applications;
     }    
+
 
     
 }

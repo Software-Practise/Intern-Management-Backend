@@ -7,6 +7,7 @@ import java.util.List;
 import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
+import com.example.repository.ApplicationRepository;
 import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
@@ -33,6 +34,9 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
 
     @Autowired
     private EmployerRepository employerRepository;
+
+    @Autowired
+    private ApplicationRepository applicationRepository;
 
     // @Autowired
     // BCryptPasswordEncoder passwordEncoder;
@@ -121,5 +125,8 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
     public void clearDB() {
         userRepository.deleteAll();
         roleRepository.deleteAll();
-    }
+        employerRepository.deleteAll();
+        applicationRepository.deleteAll();
+        }
+
 }
