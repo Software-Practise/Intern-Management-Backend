@@ -1,5 +1,6 @@
 package com.example.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.example.model.Application;
@@ -74,27 +75,28 @@ public class StudentServiceImplementation implements StudentService {
         application.setAppId(sequenceGenerator.generateSequence(Application.SEQUENCE_NAME));
         application.setNwId(nwId);
         application.setEmpId(empId);
-        // UserModel user = userRepository.findBynwId(nwId);
-        // user.getApplications().add(application);
-        // log.info("Add new Application " + application.getAppId() + " to " + nwId );
+        UserModel user = userRepository.findBynwId(nwId);
+        user.getApplications().add(application);
+        log.info("Add new Application " + application.getAppId() + " to " + nwId );
+        userRepository.save(user);
         return applicationRepository.save(application);
     }
 
     @Override
-    public Application dropApplication(Long appId) {
+    public Application dropApplication(Long appId, String nwId) {
         Application app = applicationRepository.findByAppId(appId);
         app.setStatus("DROPPED");
-        return applicationRepository.save(app);
 
-        // UserModel user = userRepository.findBynwId(nwId);
-        // ArrayList<Application> applications = user.getApplications();
-        // for(Application app: applications) {
-        //     if(app.getAppId() == appId) {
-        //         app.setStatus("Dropped");
-        //     }
-        // }
-        // log.info("Drop Application " + appId + " to " + nwId );
-        // return userRepository.save(user);
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        for(Application ap: applications) {
+            if(ap.getAppId() == appId) {
+                ap.setStatus("DROPPED");
+            }
+        }
+        log.info("Drop Application " + appId + " to " + nwId );
+        userRepository.save(user);
+        return applicationRepository.save(app);
         
     }
 
