@@ -1,6 +1,5 @@
 package com.example.services;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.example.model.Application;
@@ -45,7 +44,6 @@ public class StudentServiceImplementation implements StudentService {
 
     @Override
     public List<UserModel> getStudents() {
-        // TODO Auto-generated method stub
         
         String rtf = "ROLE_USER";
         Role role = roleRepository.findByName(rtf);
@@ -118,7 +116,6 @@ public class StudentServiceImplementation implements StudentService {
 
     @Override
     public List<Application> getAllApplications() {
-        // TODO Auto-generated method stub
         return applicationRepository.findAll();
     }
 

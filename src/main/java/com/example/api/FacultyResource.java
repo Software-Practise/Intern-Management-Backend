@@ -5,8 +5,6 @@ import java.util.List;
 
 import com.example.model.UserModel;
 import com.example.services.FacultyService;
-import com.example.services.FacultyServiceImplementation;
-import com.example.services.StudentService;
 import com.example.services.UserService;
 
 import org.apache.commons.logging.Log;
