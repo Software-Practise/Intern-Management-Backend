@@ -32,6 +32,9 @@ public class StudentServiceImplementation implements StudentService {
     @Autowired
     private EmployerRepository employerRepository;
 
+    @Autowired
+    private SequenceGeneratorService sequenceGenerator;
+
     protected final Log log = LogFactory.getLog(getClass());
 
     @Override
@@ -70,6 +73,7 @@ public class StudentServiceImplementation implements StudentService {
     @Override
     public Application addApplication(String nwId, Long empId, Application application) {
 
+        application.setAppId(sequenceGenerator.generateSequence(Application.SEQUENCE_NAME));
         application.setNwId(nwId);
         application.setEmpId(empId);
         // UserModel user = userRepository.findBynwId(nwId);
@@ -108,6 +112,7 @@ public class StudentServiceImplementation implements StudentService {
         //     }
         // }
         // log.info("Added Employer for "+ nwId + " to " + appId );
+        employer.setId(sequenceGenerator.generateSequence(Application.SEQUENCE_NAME));
         return employerRepository.save(employer);
     }
 

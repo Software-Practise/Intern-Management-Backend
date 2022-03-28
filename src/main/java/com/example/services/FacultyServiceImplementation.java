@@ -34,7 +34,6 @@ public class FacultyServiceImplementation implements FacultyService {
 
     @Override
     public List<UserModel> getAllFaculty() {
-        // TODO Auto-generated method stub
         
         String rtf = "ROLE_FACULTY";
         Role role = roleRepository.findByName(rtf);
