@@ -46,6 +46,7 @@ public class FacultyResource {
 */
     @GetMapping("/faculties/{facId}")
     public ResponseEntity<UserModel> getFacultyById(@PathVariable String facId) {
+        log.info("I enter this method");
         return ResponseEntity.ok().body(facultyService.getFaculty(facId));
     }
 
@@ -66,7 +67,7 @@ public class FacultyResource {
     public String updateUser(@RequestBody UserModel user){
         return facultyService.updateFaculty(user);
     }
-    @GetMapping("/faculties/{fName}")
+    @GetMapping("/faculties/f{fName}")
     public ResponseEntity<List<UserModel>> getFacultyByfName(@PathVariable String fName){
         return ResponseEntity.ok().body(facultyService.getFacultyByfName(fName));
     }
