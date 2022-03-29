@@ -5,8 +5,6 @@ import java.util.List;
 
 import com.example.model.UserModel;
 import com.example.services.FacultyService;
-import com.example.services.FacultyServiceImplementation;
-import com.example.services.StudentService;
 import com.example.services.UserService;
 
 import org.apache.commons.logging.Log;
@@ -48,6 +46,7 @@ public class FacultyResource {
 */
     @GetMapping("/faculties/{facId}")
     public ResponseEntity<UserModel> getFacultyById(@PathVariable String facId) {
+        log.info("I enter this method");
         return ResponseEntity.ok().body(facultyService.getFaculty(facId));
     }
 
@@ -68,7 +67,7 @@ public class FacultyResource {
     public String updateUser(@RequestBody UserModel user){
         return facultyService.updateFaculty(user);
     }
-    @GetMapping("/faculties/{fName}")
+    @GetMapping("/faculties/f{fName}")
     public ResponseEntity<List<UserModel>> getFacultyByfName(@PathVariable String fName){
         return ResponseEntity.ok().body(facultyService.getFacultyByfName(fName));
     }

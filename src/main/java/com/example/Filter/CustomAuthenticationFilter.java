@@ -1,6 +1,5 @@
 package com.example.Filter;
 
-import com.example.Filter.UsernameAndPasswordAuthenticationRequest;
 
 import java.io.IOException;
 import java.util.Date;

@@ -33,8 +33,9 @@ public class LoadDataCLR implements CommandLineRunner {
         UserModel smithw = new UserModel( new Random().nextLong(),"Will", "Smith", "smithw", "1234", new ArrayList<>());
         UserModel carryj = new UserModel(new Random().nextLong(),"Jim", "Carry", "carryj", "1234", new ArrayList<>());
         UserModel reynoldsr = new UserModel(new Random().nextLong(),"Ryan", "Reynolds", "reynoldsr", "1234", new ArrayList<>());
-        UserModel cavillh = new UserModel(new Random().nextLong(),"Henry", "Cavill", "cavillh", "cavillh@nwmissouri.edu","Computer science", "1234", new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "In Progress", "Undergraduate", "This is an offer Letter", smithw.getNwId(), 456789, 23456789, steveJ);
-
+        UserModel cavillh = new UserModel(new Random().nextLong(),"Henry", "Cavill", "cavillh", "cavillh@nwmissouri.edu","Computer science", "1234", new ArrayList<>(), new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "Undergraduate");
+        //UserModel cavillh = new UserModel(new Random().nextLong(),"Henry", "Cavill", "cavillh", "1234", new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "In Progress", "Undergraduate", "This is an offer Letter", smithw.getNwId(), 456789, 23456789, steveJ);
+        //UserModel cavillh = new UserModel(new Random().nextLong(),"Henry", "Cavill", "cavillh", "cavillh@nwmissouri.edu","Computer science", "1234", new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "In Progress", "Undergraduate", "This is an offer Letter", smithw.getNwId(), 456789, 23456789, steveJ);
             try {
                 if(userService.getUsers().size() == 0) {
 
