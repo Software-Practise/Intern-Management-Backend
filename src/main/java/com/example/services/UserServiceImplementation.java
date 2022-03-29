@@ -7,6 +7,7 @@ import java.util.List;
 import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
+import com.example.repository.ApplicationRepository;
 import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
@@ -33,6 +34,9 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
 
     @Autowired
     private EmployerRepository employerRepository;
+
+    @Autowired
+    private ApplicationRepository applicationRepository;
 
     // @Autowired
     // BCryptPasswordEncoder passwordEncoder;
@@ -77,28 +81,24 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
 
     @Override
     public UserModel getUser(String nwId) {
-        // TODO Auto-generated method stub
         log.info("Retrieve user from database");
         return userRepository.findBynwId(nwId);
     }
 
     @Override
     public List<UserModel> getUsers() {
-        // TODO Auto-generated method stub
         log.info("Retrieve all users from database");
         return userRepository.findAll();
     }
 
     @Override
     public Role saveRole(Role role) {
-        // TODO Auto-generated method stub
         log.info("Saving new role to the database");
         return roleRepository.save(role);
     }
 
     @Override
     public UserModel saveUser(UserModel userModel) {
-        // TODO Auto-generated method stub
         try {
             userModel.setPassword(passwordEncoder.encode(userModel.getPassword()));
         } catch (Exception e){
@@ -112,7 +112,6 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
 
     @Override
     public EmployerModel saveEmployer(EmployerModel employer) {
-        // TODO Auto-generated method stub
         return employerRepository.save(employer);
     }
 
@@ -121,5 +120,8 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
     public void clearDB() {
         userRepository.deleteAll();
         roleRepository.deleteAll();
-    }
+        employerRepository.deleteAll();
+        applicationRepository.deleteAll();
+        }
+
 }

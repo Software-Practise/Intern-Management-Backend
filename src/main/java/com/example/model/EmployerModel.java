@@ -7,7 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection= "employers")
 public class EmployerModel {
     
-    @Id
+    @Id 
+    
     private Long id;
     private String fName, lName;
     private String employerId;
@@ -22,16 +23,7 @@ public class EmployerModel {
 
     private String companyName;
 
-
-
     @PersistenceConstructor
-    public EmployerModel( Long id, String fName, String lName, String employerId) {
-        this.id = id;
-        this.fName = fName;
-        this.lName = lName;
-        this.employerId = employerId;
-    }
-
     public EmployerModel(Long id, String fName, String lName, String employerId, String street, 
             String city, String state, String zipCode, String phoneNumber,
             String email, String companyName) {
