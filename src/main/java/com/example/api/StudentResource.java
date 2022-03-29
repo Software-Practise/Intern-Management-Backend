@@ -51,14 +51,25 @@ public class StudentResource {
     }
 
     @GetMapping("/students/{nwId}/a{appId}")
-    public ResponseEntity<Application> getApplicationByAppId(@PathVariable String nwId, @PathVariable Long appId){
+    public ResponseEntity<Application> getApplicationByAppId(@PathVariable String nwId, @PathVariable String appId){
         return ResponseEntity.ok().body(studentService.getApplicationById(nwId, appId));
     }
 
-    @PostMapping("/students/comment/{nwId}")
-    public void addComment(@PathVariable String nwId, @RequestBody Comment comm){
-        studentService.addComment(nwId, comm);
-        userService.saveUser(userService.getUser(nwId));
+    @PostMapping("/students/comment/{nwId}/{appId}")
+    public void addComment(@PathVariable String nwId, @RequestBody Comment comm, @PathVariable String appId){
+        studentService.addComment(nwId, comm, appId);
+        //userService.saveUser(userService.getUser(nwId));
+        
+    }
+
+    @GetMapping("/students/allcomments/{nwId}/{appId}")
+    public List<Comment> getComments(@PathVariable String nwId, @PathVariable String appId){
+        return studentService.getComments(nwId, appId);
+    }
+    @PostMapping("/students/application/{nwId}")
+    public String addApplication(@PathVariable String nwId, @RequestBody Application app){
+        studentService.addAplication(nwId, app);
+        return "Application added to + " + nwId;
     }
 
     

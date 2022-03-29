@@ -1,6 +1,7 @@
 package com.example.model;
 
 import org.springframework.data.annotation.Id;
+import java.util.ArrayList;
 
 public class Application {
 
@@ -9,12 +10,14 @@ public class Application {
     //This will need some api mapping in order to work then add the application to the specific user.
 
     @Id
-    private Long appId;
+    private String appId;
     private String status;
     private String offerLetter;
     private String faculty_id;
     private long startDate;
     private long endDate;
+    
+
     private String term;
     private int year;
     private int crn;
@@ -23,12 +26,14 @@ public class Application {
     private String courseTitle;
     private boolean paid;
     private boolean unpaid;
+
+    private ArrayList<Comment> comments = new ArrayList();
     
     private EmployerModel employer;
 
-    public Application(Long appId, String status, String offerLetter, String faculty_id, long startDate, long endDate,
+    public Application(String appId, String status, String offerLetter, String faculty_id, long startDate, long endDate,
             String term, int year, int crn, int section, int creditHour, String courseTitle, boolean paid,
-            boolean unpaid, EmployerModel employer) {
+            boolean unpaid, EmployerModel employer, ArrayList<Comment> comments) {
         this.appId = appId;
         this.status = status;
         this.offerLetter = offerLetter;
@@ -44,13 +49,21 @@ public class Application {
         this.paid = paid;
         this.unpaid = unpaid;
         this.employer = employer;
+        this.comments = comments;
     }
+    /*
+    public Application(Long appId, String status, ArrayList<Comment> comments){
+        this.appId = appId;
+        this.status = status;
+        this.comments = comments;
+    }
+    */
 
-    public Long getAppId() {
+    public String getAppId() {
         return appId;
     }
 
-    public void setAppId(Long appId) {
+    public void setAppId(String appId) {
         this.appId = appId;
     }
 
@@ -166,6 +179,13 @@ public class Application {
         this.employer = employer;
     }
 
+    public ArrayList<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(ArrayList<Comment> comments) {
+        this.comments = comments;
+    }
     
     
 }

@@ -15,8 +15,12 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ch.qos.logback.classic.Logger;
+
 @Service
 public class StudentServiceImplementation implements StudentService {
+
+    //protected final Log logger = LogFactory.getLog(getClass());
 
     @Autowired
     private UserRepository userRepository;
@@ -62,7 +66,12 @@ public class StudentServiceImplementation implements StudentService {
         userRepository.save(user);
     }
 
-    public void dropApplication(String nwId, Long appId) {
+    public void removeApplication(String nwId, String appId){
+        UserModel user = userRepository.findBynwId(nwId);
+
+    }
+
+    public void dropApplication(String nwId, String appId) {
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         for(Application app: applications) {
@@ -73,20 +82,49 @@ public class StudentServiceImplementation implements StudentService {
         
     }
 
-    public Application getApplicationById(String nwId, Long appId){
+    public Application getApplicationById(String nwId, String appId){
         UserModel user = userRepository.findBynwId(nwId);
+        Application app = user.getApplications().get(0);
+        for(Application a: user.getApplications()){
+            if(a.getAppId() == appId){
+                return a;
+            }
+        }
         //ArrayList<Application> applications = user.getApplications();
-        return getApplicationById(nwId, appId);
+        return app;
     }
 
-    public List<Comment> getComments(String nwId){
-        return userRepository.findCommentBynwId(nwId);
+    public List<Comment> getComments(String nwId, String appId){
+        ///UserModel user = userRepository.findBynwId(nwId);
+        Application app = getApplicationById(nwId, appId);
+        return app.getComments();
+        //return userRepository.findCommentBynwId(nwId);
     }
 
-    public void addComment(String nwId, Comment comment){
+    public void addComment(String nwId, Comment comment, String appId){
         UserModel user = userRepository.findBynwId(nwId);
-        user.getComments().add(comment);
-        userRepository.save(user);
+        Application app = getApplicationById(nwId, appId);
+        app.getComments().add(comment);
+        //userRepository.delete(user);
+        
+        ArrayList<Application> applications = user.getApplications();
+        //System.out.println("entered: length is: "+ applications.size());
+        
+        for(int i = 0; i < applications.size(); i++){
+            if(applications.get(i).getAppId() == appId){
+                applications.set(i, app);
+                user.setApplications(applications);
+                userRepository.save(user);
+                //logger.info("Saved the user in the for loop");
+                
+            }
+        }
+        
+        //addAplication(nwId, app);
+        //return "Added application to " + nwId; 
+        //userRepository.save(user);
     }
     //for comment do the same as application but only need nwid, commentid, facid, and message which is the string comment, also need timestamps
+
+   
 }

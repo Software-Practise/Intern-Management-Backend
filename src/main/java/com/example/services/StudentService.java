@@ -14,8 +14,9 @@ public interface StudentService {
     UserModel getStudent(String nwId);
     List<UserModel> getStudents();
     List<UserModel> getStudentByFaculty(String nwid);
-    Application getApplicationById(String nwId, Long appId);
-    List<Comment> getComments(String nwId);
+    Application getApplicationById(String nwId, String appId);
+    List<Comment> getComments(String nwId, String appId);
+    void addComment(String nwId, Comment comment, String appId);
 
     
 }
