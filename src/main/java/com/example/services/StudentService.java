@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 public interface StudentService {
 
     UserModel getStudent(String nwId);
+    Application setStatus(Long appId, String nwId, String status);
     List<UserModel> getStudents();
     List<Application> getStudentByFaculty(String nwid);
     Application addApplication(String nwId, Long empId, Application application);

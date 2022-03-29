@@ -43,6 +43,27 @@ public class StudentServiceImplementation implements StudentService {
         return userRepository.findBynwId(nwId);
     }
 
+    
+    @Override
+    public Application setStatus(Long appId, String nwId, String status) {
+        // TODO Auto-generated method stub
+        Application app = applicationRepository.findByAppId(appId);
+        app.setStatus(status);
+
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        for(Application ap: applications) {
+            if(ap.getAppId() == appId) {
+                ap.setStatus(status);
+            }
+        }
+        log.info("Changed status to " + status);
+        userRepository.save(user);
+        return applicationRepository.save(app);
+
+    }
+
+
     @Override
     public List<UserModel> getStudents() {
         
