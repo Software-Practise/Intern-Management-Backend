@@ -5,13 +5,9 @@ import com.example.repository.EmployerRepository;
 import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 @Service
@@ -25,7 +21,7 @@ public class EmployerServiceImplementation implements EmployerService {
     @Override
     public EmployerModel getEmployer(String employerId) {
         log.info("Retrieve client " + employerId + " from database");
-        return employerRepository.findByemployerId(employerId);
+        return employerRepository.findByEmployerId(employerId);
     }
 
     @Override
@@ -34,7 +30,27 @@ public class EmployerServiceImplementation implements EmployerService {
         return employerRepository.findAll();
     }
 
-//    @Override
+    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
+    public String deleteEmployer(String employerId) {
+        log.info("Delete " + employerId + " from database");
+        employerRepository.deleteByEmployerId(employerId);
+        return "Deleted employer";
+    }
+
+    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
+    public String addEmployer(EmployerModel employer) {
+        log.info("Add " + employer + " to database");
+        employerRepository.save(employer);
+        return "Added employer";
+    }
+
+    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
+    public String updateEmployer(EmployerModel employer) {
+        log.info("Update " + employer + " in database");
+        employerRepository.save(employer);
+        return "Updated employer";
+    }
+    //    @Override
 //    public UserDetails loadEmployerByUsername(String employerId) throws UsernameNotFoundException {
 //        EmployerModel employer = employerRepository.findByemployerId(employerId);
 //        if(employer == null) {
@@ -46,13 +62,11 @@ public class EmployerServiceImplementation implements EmployerService {
 //        return null;
 //    }
 
+    // Realistically if this would be included, only admins should have access
     @Override
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public void clearDB() {
+        log.info("DEBUG!!!\nCLEARE ALL CLIENTS FROM DATABASE");
         employerRepository.deleteAll();
     }
-
-//    @Override
-//    public void clearDbByEmployerId(String employerId) {
-//        employerRepository.deleteAll();
-//    }
 }

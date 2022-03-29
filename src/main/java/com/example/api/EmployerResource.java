@@ -7,9 +7,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -22,8 +24,34 @@ public class EmployerResource {
     @Autowired
     private EmployerService employerService;
 
+    @GetMapping("/employers")
+    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
     public ResponseEntity<List<EmployerModel>> getEmployer() {
         return ResponseEntity.ok().body(employerService.getEmployers());
     }
 
+    @GetMapping("/employers/{employerId}")
+    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
+    public ResponseEntity<EmployerModel> getEmployer(String employerId) {
+        return ResponseEntity.ok().body(employerService.getEmployer(employerId));
+    }
+
+
+    // NEEDED??
+    @DeleteMapping("/employers/delete/{employerId}")
+    public String deleteEmployer(@PathVariable String employerId) {
+        return employerService.deleteEmployer(employerId);
+    }
+
+    @PostMapping("/employers/update")
+    public String updateEmployer(@RequestBody EmployerModel employer) {
+        return employerService.updateEmployer(employer);
+    }
+
+    @PostMapping("/employers/add")
+    public String addEmployer(@RequestBody EmployerModel employer) {
+        // Needed?
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/employer/save").toUriString());
+        return employerService.addEmployer(employer);
+    }
 }
