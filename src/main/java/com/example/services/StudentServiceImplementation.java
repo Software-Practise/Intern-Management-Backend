@@ -11,6 +11,7 @@ import com.example.repository.ApplicationRepository;
 import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
+import com.example.model.Comment;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -98,6 +99,36 @@ public class StudentServiceImplementation implements StudentService {
         userRepository.save(user);
         return applicationRepository.save(app);
         
+    }
+
+    public Comment addComment(String nwId, Comment comment, Long appId){
+        int index = 0;
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        Application app = applicationRepository.findByAppId(appId);
+        app.getComments().add(comment);
+        log.info("MADE IT");
+        applicationRepository.save(app);
+        for(int i = 0; i < applications.size(); i++){
+            log.info("ENTERED HERE " + applications.get(i).getAppId() + " " + appId);
+            if(applications.get(i).getAppId().equals(appId)){
+                log.info("appId:" + appId);
+                applications.set(i, app);
+                user.setApplications(applications);
+                userRepository.save(user);
+            }
+        }
+        //userRepository.save(user);
+        //return "Added comment to nwId:" + nwId + " and appId: " + appId; 
+        return comment;
+        /*
+        for(int i = 0; i< applications.size(); i++){
+            if(applications.get(i).getAppId() == appId){
+                applications.set(i, app);
+                applicationRepository.save(app);
+            }
+        }
+        */
     }
 
 

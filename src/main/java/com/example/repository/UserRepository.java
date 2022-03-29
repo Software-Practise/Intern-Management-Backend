@@ -2,12 +2,14 @@ package com.example.repository;
 
 import java.util.List;
 
+import com.example.model.Application;
 import com.example.model.UserModel;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import com.example.model.Comment;
 
 @Repository
 public interface UserRepository extends MongoRepository<UserModel, Long> {
@@ -24,8 +26,6 @@ public interface UserRepository extends MongoRepository<UserModel, Long> {
 
     @Query("{'faculty_id': ?0,'roles':{'id': ?1, 'name': ?2}}")
     List<UserModel> findStudentUnderFaculty(@Param("facId") String faculty_id, Long id, String name);
-    
-
     
 
 
