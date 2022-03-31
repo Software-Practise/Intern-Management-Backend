@@ -43,6 +43,27 @@ public class StudentServiceImplementation implements StudentService {
         return userRepository.findBynwId(nwId);
     }
 
+    
+    @Override
+    public Application setStatus(Long appId, String nwId, String status) {
+        Application app = applicationRepository.findByAppId(appId);
+        app.setStatus(status);
+
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        for(Application ap: applications) {
+            log.info("enter"+ ap.getAppId() + " " + appId);
+            if(ap.getAppId().equals(appId)) {
+                ap.setStatus(status);
+            }
+        }
+        log.info("Changed status to " + status);
+        userRepository.save(user);
+        return applicationRepository.save(app);
+
+    }
+
+
     @Override
     public List<UserModel> getStudents() {
         
@@ -90,7 +111,7 @@ public class StudentServiceImplementation implements StudentService {
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         for(Application ap: applications) {
-            if(ap.getAppId() == appId) {
+            if(ap.getAppId().equals(appId)) {
                 ap.setStatus("DROPPED");
             }
         }
