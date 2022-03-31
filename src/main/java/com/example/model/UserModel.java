@@ -25,6 +25,7 @@ public class UserModel {
     private String state;
     private String zipCode;
     private String phoneNumber;
+    private String email;
 
 
     private String major;
@@ -39,13 +40,14 @@ public class UserModel {
     //private EmployerModel employer;
 
     @PersistenceConstructor
-    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles) {
+    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles, String email) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.nwId = nwId;
         this.password = password;
         this.roles = roles;
+        this.email = email;
     }
 
     
@@ -75,7 +77,7 @@ public class UserModel {
 
     public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
             ArrayList<Application> applications, String street, String city, String state, String zipCode,
-            String phoneNumber, String major, String level) {
+            String phoneNumber, String major, String level, String email) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
@@ -90,6 +92,7 @@ public class UserModel {
         this.phoneNumber = phoneNumber;
         this.major = major;
         this.level = level;
+        this.email = email;
     }
 
 
@@ -176,6 +179,9 @@ public class UserModel {
     }
     public void setLevel(String level) {
         this.level = level;
+    }
+    public String getEmail(){
+        return email;
     }
     // public String getOfferLetter() {
     //     return offerLetter;
