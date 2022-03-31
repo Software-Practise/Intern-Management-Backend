@@ -76,6 +76,13 @@ public class StudentResource {
         
     }
 
+    @PostMapping("/students/{nwId}/setStatus/{appId}")
+    public ResponseEntity<?> setStatus(@PathVariable String nwId, @PathVariable Long appId, @RequestBody String status) {
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/setStatus/{appId}").toUriString());
+        return ResponseEntity.created(uri).body(studentService.setStatus(appId, nwId, status));
+        
+    }
+
     @GetMapping("/students/application")
     public ResponseEntity<?> getAllApplications(){
         return ResponseEntity.ok().body(studentService.getAllApplications());
