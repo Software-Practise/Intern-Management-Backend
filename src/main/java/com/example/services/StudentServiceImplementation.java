@@ -46,7 +46,6 @@ public class StudentServiceImplementation implements StudentService {
     
     @Override
     public Application setStatus(Long appId, String nwId, String status) {
-        // TODO Auto-generated method stub
         Application app = applicationRepository.findByAppId(appId);
         app.setStatus(status);
 
