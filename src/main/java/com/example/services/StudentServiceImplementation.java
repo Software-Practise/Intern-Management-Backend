@@ -53,7 +53,8 @@ public class StudentServiceImplementation implements StudentService {
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         for(Application ap: applications) {
-            if(ap.getAppId() == appId) {
+            log.info("enter"+ ap.getAppId() + " " + appId);
+            if(ap.getAppId().equals(appId)) {
                 ap.setStatus(status);
             }
         }
@@ -111,7 +112,7 @@ public class StudentServiceImplementation implements StudentService {
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         for(Application ap: applications) {
-            if(ap.getAppId() == appId) {
+            if(ap.getAppId().equals(appId)) {
                 ap.setStatus("DROPPED");
             }
         }
