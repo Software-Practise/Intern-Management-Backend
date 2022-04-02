@@ -19,7 +19,8 @@ public interface StudentService {
     Application dropApplication(Long appId, String nwId);
     EmployerModel saveEmployer(EmployerModel employer);
     List<Application> getAllApplications();
-    Comment addComment(String nwId, Comment comment, Long appId);
+    Application getApplication(Long appId);
+    Application addComment(String nwId, Comment comment, Long appId);
 
 
 

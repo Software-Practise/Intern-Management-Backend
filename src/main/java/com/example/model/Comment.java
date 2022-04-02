@@ -5,8 +5,12 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 
 public class Comment {
+
+    @Transient
+    public static final String SEQUENCE_NAME = "users_sequence";
 
     @Id
     private Long commId;

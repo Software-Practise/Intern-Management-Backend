@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.model.Application;
+import com.example.model.Comment;
 import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
@@ -11,7 +12,6 @@ import com.example.repository.ApplicationRepository;
 import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
-import com.example.model.Comment;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -97,6 +97,8 @@ public class StudentServiceImplementation implements StudentService {
         application.setAppId(sequenceGenerator.generateSequence(Application.SEQUENCE_NAME));
         application.setNwId(nwId);
         application.setEmpId(empId);
+        application.setComments(new ArrayList<>());
+        application.setStatus("STARTED");
         UserModel user = userRepository.findBynwId(nwId);
         user.getApplications().add(application);
         log.info("Add new Application " + application.getAppId() + " to " + nwId );
@@ -122,16 +124,16 @@ public class StudentServiceImplementation implements StudentService {
         
     }
 
-    public Comment addComment(String nwId, Comment comment, Long appId){
-        int index = 0;
+    public Application addComment(String nwId, Comment comment, Long appId){
+        //int index = 0;
+        comment.setCommId(sequenceGenerator.generateSequence(Comment.SEQUENCE_NAME));
+
         UserModel user = userRepository.findBynwId(nwId);
         ArrayList<Application> applications = user.getApplications();
         Application app = applicationRepository.findByAppId(appId);
         app.getComments().add(comment);
-        log.info("MADE IT");
-        applicationRepository.save(app);
+
         for(int i = 0; i < applications.size(); i++){
-            log.info("ENTERED HERE " + applications.get(i).getAppId() + " " + appId);
             if(applications.get(i).getAppId().equals(appId)){
                 log.info("appId:" + appId);
                 applications.set(i, app);
@@ -139,17 +141,9 @@ public class StudentServiceImplementation implements StudentService {
                 userRepository.save(user);
             }
         }
-        //userRepository.save(user);
-        //return "Added comment to nwId:" + nwId + " and appId: " + appId; 
-        return comment;
-        /*
-        for(int i = 0; i< applications.size(); i++){
-            if(applications.get(i).getAppId() == appId){
-                applications.set(i, app);
-                applicationRepository.save(app);
-            }
-        }
-        */
+        userRepository.save(user);
+        log.info("Added comment to nwId:" + nwId + " and appId: " + appId); 
+        return applicationRepository.save(app);
     }
 
 
@@ -172,6 +166,15 @@ public class StudentServiceImplementation implements StudentService {
     public List<Application> getAllApplications() {
         return applicationRepository.findAll();
     }
+
+
+    @Override
+    public Application getApplication(Long appId) {
+        // TODO Auto-generated method stub
+        return applicationRepository.findByAppId(appId);
+    }
+
+    
 
     
     

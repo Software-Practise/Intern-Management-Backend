@@ -87,10 +87,17 @@ public class StudentResource {
     public ResponseEntity<?> getAllApplications(){
         return ResponseEntity.ok().body(studentService.getAllApplications());
     }
+
+    @GetMapping("/students/application/{appId}")
+    public ResponseEntity<?> getApplication(@PathVariable Long appId){
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/application/{appId}").toUriString());
+        return ResponseEntity.created(uri).body(studentService.getApplication(appId));
+    }
     
     @PostMapping("/students/{nwId}/comments/{appId}")
     public ResponseEntity<?> addComment(@PathVariable String nwId, @RequestBody Comment comment, @PathVariable Long appId){
-        return ResponseEntity.ok().body(studentService.addComment(nwId, comment, appId));
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/comments/{appId}").toUriString());
+        return ResponseEntity.created(uri).body(studentService.addComment(nwId, comment, appId));
     }
 }
 
