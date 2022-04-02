@@ -28,7 +28,8 @@ public class FacultyResource {
     @Autowired
     private FacultyService facultyService;
 
-    @Autowired UserService userService;
+    @Autowired 
+    private UserService userService;
 
     protected final Log log = LogFactory.getLog(getClass());
 

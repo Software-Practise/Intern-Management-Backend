@@ -7,6 +7,8 @@ import com.example.model.Application;
 import com.example.model.EmployerModel;
 import com.example.model.UserModel;
 import com.example.services.StudentService;
+import com.example.services.StudentServiceImplementation;
+import com.example.model.Comment;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import org.apache.commons.logging.Log;
@@ -29,7 +31,7 @@ import lombok.Data;
 public class StudentResource {
 
     @Autowired
-    private StudentService studentService;
+    private StudentServiceImplementation studentService;
 
     protected final Log log = LogFactory.getLog(getClass());
 
@@ -84,6 +86,18 @@ public class StudentResource {
     @GetMapping("/students/application")
     public ResponseEntity<?> getAllApplications(){
         return ResponseEntity.ok().body(studentService.getAllApplications());
+    }
+
+    @GetMapping("/students/application/{appId}")
+    public ResponseEntity<?> getApplication(@PathVariable Long appId){
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/application/{appId}").toUriString());
+        return ResponseEntity.created(uri).body(studentService.getApplication(appId));
+    }
+    
+    @PostMapping("/students/{nwId}/comments/{appId}")
+    public ResponseEntity<?> addComment(@PathVariable String nwId, @RequestBody Comment comment, @PathVariable Long appId){
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/comments/{appId}").toUriString());
+        return ResponseEntity.created(uri).body(studentService.addComment(nwId, comment, appId));
     }
 }
 

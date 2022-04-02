@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.model.Application;
+import com.example.model.Comment;
 import com.example.model.EmployerModel;
 import com.example.model.Role;
 import com.example.model.UserModel;
@@ -96,6 +97,8 @@ public class StudentServiceImplementation implements StudentService {
         application.setAppId(sequenceGenerator.generateSequence(Application.SEQUENCE_NAME));
         application.setNwId(nwId);
         application.setEmpId(empId);
+        application.setComments(new ArrayList<>());
+        application.setStatus("STARTED");
         UserModel user = userRepository.findBynwId(nwId);
         user.getApplications().add(application);
         log.info("Add new Application " + application.getAppId() + " to " + nwId );
@@ -121,6 +124,28 @@ public class StudentServiceImplementation implements StudentService {
         
     }
 
+    public Application addComment(String nwId, Comment comment, Long appId){
+        //int index = 0;
+        comment.setCommId(sequenceGenerator.generateSequence(Comment.SEQUENCE_NAME));
+
+        UserModel user = userRepository.findBynwId(nwId);
+        ArrayList<Application> applications = user.getApplications();
+        Application app = applicationRepository.findByAppId(appId);
+        app.getComments().add(comment);
+
+        for(int i = 0; i < applications.size(); i++){
+            if(applications.get(i).getAppId().equals(appId)){
+                log.info("appId:" + appId);
+                applications.set(i, app);
+                user.setApplications(applications);
+                userRepository.save(user);
+            }
+        }
+        userRepository.save(user);
+        log.info("Added comment to nwId:" + nwId + " and appId: " + appId); 
+        return applicationRepository.save(app);
+    }
+
 
 
     @Override
@@ -141,6 +166,15 @@ public class StudentServiceImplementation implements StudentService {
     public List<Application> getAllApplications() {
         return applicationRepository.findAll();
     }
+
+
+    @Override
+    public Application getApplication(Long appId) {
+        // TODO Auto-generated method stub
+        return applicationRepository.findByAppId(appId);
+    }
+
+    
 
     
     
