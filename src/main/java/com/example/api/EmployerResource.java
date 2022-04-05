@@ -49,9 +49,8 @@ public class EmployerResource {
     }
 
     @PostMapping("/employers/add")
-    public String addEmployer(@RequestBody EmployerModel employer) {
-        // Needed?
+    public ResponseEntity<?> addEmployer(@RequestBody EmployerModel employer) {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/employer/save").toUriString());
-        return employerService.addEmployer(employer);
+        return ResponseEntity.created(uri).body(employerService.addEmployer(employer));
     }
 }
