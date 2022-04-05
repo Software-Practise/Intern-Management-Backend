@@ -146,6 +146,18 @@ public class StudentServiceImplementation implements StudentService {
         return applicationRepository.save(app);
     }
 
+    public List<Application> getCompleteApps(String nwId){
+        ArrayList<Application> compApps = new ArrayList();
+        ArrayList<Application> allApps = applicationRepository.findBynwId(nwId);
+        for(Application app: allApps){
+            log.info("Application id = " + app.getAppId() + " Application status = " + app.getStatus());
+            if(app.getStatus().equals("complete")){
+                compApps.add(app);
+            }
+        }
+        return compApps;
+    }
+
 
 
     @Override
