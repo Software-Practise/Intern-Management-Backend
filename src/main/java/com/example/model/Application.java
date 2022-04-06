@@ -1,11 +1,17 @@
 package com.example.model;
 
+import java.util.ArrayList;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="applications")
 public class Application {
+
+    @Transient
+    public static final String SEQUENCE_NAME = "users_sequence";
 
     @Id
     private Long appId;
@@ -24,12 +30,13 @@ public class Application {
     private boolean paid;
     private boolean unpaid;
     private Long empId;
+    private ArrayList<Comment> comments;
     
 
     @PersistenceConstructor
     public Application(Long appId, String status, String offerLetter, String faculty_id, long startDate, long endDate,
             String term, int year, int crn, int section, int creditHour, String courseTitle, boolean paid,
-            boolean unpaid) {
+            boolean unpaid, ArrayList<Comment> comments){
         this.appId = appId;
         this.status = status;
         this.offerLetter = offerLetter;
@@ -44,7 +51,10 @@ public class Application {
         this.courseTitle = courseTitle;
         this.paid = paid;
         this.unpaid = unpaid;
+        this.comments = comments;
     }
+
+    
 
     public Long getAppId() {
         return appId;
@@ -173,6 +183,15 @@ public class Application {
     public void setEmpId(Long empId) {
         this.empId = empId;
     }
+
+    public ArrayList<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(ArrayList<Comment> comments) {
+        this.comments = comments;
+    }
+    
 
     
     

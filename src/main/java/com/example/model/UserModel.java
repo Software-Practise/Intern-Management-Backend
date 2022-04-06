@@ -5,10 +5,14 @@ import java.util.Collection;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection= "users")
 public class UserModel {
+
+    @Transient
+    public static final String SEQUENCE_NAME = "users_sequence";
 
     @Id 
     private Long id;
@@ -16,6 +20,8 @@ public class UserModel {
     private String lName;
     private String nwId;
     private String password;
+    private String email;
+    private String dept;
     private Collection<Role> roles = new ArrayList<>();
 
     private ArrayList<Application> applications = new ArrayList<>();
@@ -25,7 +31,7 @@ public class UserModel {
     private String state;
     private String zipCode;
     private String phoneNumber;
-    private String email;
+
 
 
     private String major;
@@ -34,20 +40,22 @@ public class UserModel {
     //private String offerLetter;
     //private String faculty_id;
 
+
     //private long startDate;
     //private long endDate;
     
     //private EmployerModel employer;
 
-    @PersistenceConstructor
-    public UserModel( Long id, String fName, String lName, String nwId, String password, Collection<Role> roles, String email) {
+    // @PersistenceConstructor
+    public UserModel( Long id, String fName, String lName, String nwId, /*String email, String dept,*/ String password, Collection<Role> roles) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.nwId = nwId;
         this.password = password;
         this.roles = roles;
-        this.email = email;
+        //this.email = email;
+        //this.dept = dept;
     }
 
     
@@ -75,9 +83,10 @@ public class UserModel {
     //     this.employer = employer;
     // }
 
-    public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,
+    @PersistenceConstructor
+    public UserModel(Long id, String fName, String lName, String nwId,String email, String dept, String password, Collection<Role> roles,
             ArrayList<Application> applications, String street, String city, String state, String zipCode,
-            String phoneNumber, String major, String level, String email) {
+            String phoneNumber, String major, String level) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
@@ -93,9 +102,22 @@ public class UserModel {
         this.major = major;
         this.level = level;
         this.email = email;
+        this.dept = dept;
     }
 
 
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getDept() {
+        return dept;
+    }
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
     public Long getId() {
         return id;
     }
@@ -180,9 +202,6 @@ public class UserModel {
     public void setLevel(String level) {
         this.level = level;
     }
-    public String getEmail(){
-        return email;
-    }
     // public String getOfferLetter() {
     //     return offerLetter;
     // }
@@ -225,10 +244,10 @@ public class UserModel {
         return applications;
     }
 
-
     public void setApplications(ArrayList<Application> applications) {
         this.applications = applications;
     }    
+
 
     
 }
