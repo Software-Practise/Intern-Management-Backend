@@ -56,7 +56,7 @@ public class StudentResource {
     public ResponseEntity<?> addApplication(@PathVariable String nwId,@RequestBody NewApplication newApplication) {
         //URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addApplication").toUriString());
         //return ResponseEntity.created(uri).body(studentService.addApplication(nwId, application));
-        EmployerModel employer = studentService.saveEmployer(newApplication.getEmployer());
+        EmployerModel employer = studentService.saveEmployer(newApplication.getEmployerModel());
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/addApplication").toUriString());
         return ResponseEntity.created(uri).body(studentService.addApplication(nwId, employer.getId(), newApplication.getApplication()));
         //return ResponseEntity.created(uri).body(employer);
@@ -113,7 +113,7 @@ class NewApplication {
         return application;
     }
 
-    public EmployerModel getEmployer() {
+    public EmployerModel getEmployerModel() {
         return employerModel;
     }
  
