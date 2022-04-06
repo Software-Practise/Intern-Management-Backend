@@ -18,7 +18,7 @@ public class NotificationService {
     }
     public void sendNotification(UserModel user) throws MailException{
         SimpleMailMessage mail = new SimpleMailMessage();
-        mail.setTo(user.getEmail());
+        mail.setTo("helpmetest2022@outlook.com");
         mail.setFrom("helpmetest2022@outlook.com");
         mail.setSubject("Your Status has changed");
         mail.setText("email notification");

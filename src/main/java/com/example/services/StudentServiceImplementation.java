@@ -1,5 +1,6 @@
 package com.example.services;
 
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +14,11 @@ import com.example.repository.EmployerRepository;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
 
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -35,6 +38,9 @@ public class StudentServiceImplementation implements StudentService {
 
     @Autowired
     private SequenceGeneratorService sequenceGenerator;
+
+    @Autowired
+    private NotificationService notification;
 
     protected final Log log = LogFactory.getLog(getClass());
 
@@ -60,7 +66,15 @@ public class StudentServiceImplementation implements StudentService {
         }
         log.info("Changed status to " + status);
         userRepository.save(user);
+        // send Email notification
+        try{
+            notification.sendNotification(user);
+        }
+        catch(MailException e){
+            
+        }        
         return applicationRepository.save(app);
+
 
     }
 
