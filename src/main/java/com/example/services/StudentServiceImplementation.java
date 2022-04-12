@@ -147,11 +147,11 @@ public class StudentServiceImplementation implements StudentService {
     }
 
     public List<Application> getCompleteApps(String nwId){
-        ArrayList<Application> compApps = new ArrayList();
+        ArrayList<Application> compApps = new ArrayList<>();
         ArrayList<Application> allApps = applicationRepository.findBynwId(nwId);
         for(Application app: allApps){
             log.info("Application id = " + app.getAppId() + " Application status = " + app.getStatus());
-            if(app.getStatus().equals("complete")){
+            if(app.getStatus().equals("COMPLETE")){
                 compApps.add(app);
             }
         }
@@ -159,11 +159,11 @@ public class StudentServiceImplementation implements StudentService {
     }
 
     public List<Application> getInCompleteApps(String nwId){
-        ArrayList<Application> compApps = new ArrayList();
+        ArrayList<Application> compApps = new ArrayList<>();
         ArrayList<Application> allApps = applicationRepository.findBynwId(nwId);
         for(Application app: allApps){
             log.info("Application id = " + app.getAppId() + " Application status = " + app.getStatus());
-            if(app.getStatus().equals("incomplete")){
+            if(!(app.getStatus().equals("COMPLETE") || app.getStatus().equals("DROPPED") )){
                 compApps.add(app);
             }
         }
