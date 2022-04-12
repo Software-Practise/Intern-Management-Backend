@@ -1,0 +1,59 @@
+[
+  {
+    "appId": 109,
+    "fname": "Judy",
+    "lname": "Watts",
+    "nwid": 3992,
+    "password": 12345678,
+    "email": "judywatts@xumonk.com",
+    "roles": [
+      {
+        "id": 7935859722102441000,
+        "name": "ROLE_ADMIN"
+      }
+    ],
+    "street": "546 Clove Road",
+    "city": "Hampstead",
+    "state": "Wisconsin",
+    "zipcode": 5326,
+    "phone": "+1 (862) 555-2196"
+  },
+  {
+    "appId": 101,
+    "fname": "Cotton",
+    "lname": "Washington",
+    "nwid": 2874,
+    "password": 12345678,
+    "email": "cottonwashington@xumonk.com",
+    "roles": [
+      {
+        "id": 7935859722102441000,
+        "name": "ROLE_ADMIN"
+      }
+    ],
+    "street": "697 Essex Street",
+    "city": "Curtice",
+    "state": "Mississippi",
+    "zipcode": 1510,
+    "phone": "+1 (821) 555-3420"
+  },
+  {
+    "appId": 475,
+    "fname": "Hodges",
+    "lname": "Parrish",
+    "nwid": 4456,
+    "password": 12345678,
+    "email": "hodgesparrish@xumonk.com",
+    "roles": [
+      {
+        "id": 7935859722102441000,
+        "name": "ROLE_ADMIN"
+      }
+    ],
+    "street": "639 Wortman Avenue",
+    "city": "Whitewater",
+    "state": "New York",
+    "zipcode": 9728,
+    "phone": "+1 (871) 542-2687"
+  }
+]
