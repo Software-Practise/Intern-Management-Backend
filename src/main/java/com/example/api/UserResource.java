@@ -86,9 +86,11 @@ public class UserResource {
                             .withIssuer(request.getRequestURL().toString())
                             .withClaim("roles", user.getRoles().stream().map(Role::getName).collect(Collectors.toList()))
                             .sign(algorithm);
+        String role_name = ""+user.getRoles().toArray()[0]; 
         Map<String, String> tokens = new HashMap<>();
         tokens.put("access_token", access_token);
         tokens.put("refresh_token", refresh_token);
+        tokens.put("role", role_name);
         response.setContentType("application/json");
         new ObjectMapper().writeValue(response.getOutputStream(), tokens);
                 

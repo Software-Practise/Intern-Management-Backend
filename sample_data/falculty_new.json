@@ -1,0 +1,142 @@
+[
+  {
+    "fname": "Flossie",
+    "lname": "Mcmillan",
+    "nwid": 3204,
+    "password": 12345678,
+    "email": "flossiemcmillan@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Rosalinda",
+    "lname": "Stanton",
+    "nwid": 3152,
+    "password": 12345678,
+    "email": "rosalindastanton@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Conway",
+    "lname": "Silva",
+    "nwid": 3599,
+    "password": 12345678,
+    "email": "conwaysilva@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Stephanie",
+    "lname": "Sampson",
+    "nwid": 2954,
+    "password": 12345678,
+    "email": "stephaniesampson@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Winters",
+    "lname": "Juarez",
+    "nwid": 3423,
+    "password": 12345678,
+    "email": "wintersjuarez@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Durham",
+    "lname": "Hatfield",
+    "nwid": 2242,
+    "password": 12345678,
+    "email": "durhamhatfield@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Austin",
+    "lname": "Quinn",
+    "nwid": 4417,
+    "password": 12345678,
+    "email": "austinquinn@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Woodward",
+    "lname": "Cain",
+    "nwid": 3494,
+    "password": 12345678,
+    "email": "woodwardcain@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Cotton",
+    "lname": "Delgado",
+    "nwid": 4468,
+    "password": 12345678,
+    "email": "cottondelgado@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  },
+  {
+    "fname": "Marva",
+    "lname": "Gay",
+    "nwid": 4431,
+    "password": 12345678,
+    "email": "marvagay@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 2788833180160254000,
+        "name": "ROLE_FACULTY"
+      }
+    ]
+  }
+]
