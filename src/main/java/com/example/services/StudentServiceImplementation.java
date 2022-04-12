@@ -169,12 +169,12 @@ public class StudentServiceImplementation implements StudentService {
         }
         return compApps;
     }
-/*
+
     public List<Application> getApps(String nwId){
         ArrayList<Application> allApps = applicationRepository.findBynwId(nwId);
         return allApps;
     }
-*/
+
 
 
     @Override
