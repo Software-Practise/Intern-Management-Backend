@@ -21,6 +21,7 @@ public interface StudentService {
     List<Application> getAllApplications();
     Application getApplication(Long appId);
     Application addComment(String nwId, Comment comment, Long appId);
+    List<Application> getCompleteApps(String nwId);
 
 
 
