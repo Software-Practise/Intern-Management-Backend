@@ -1,10 +1,10 @@
 [
   {
-    "fname": "Lindsay",
-    "lname": "Briggs",
-    "nwid": "lindsaybriggs@combogen.com",
+    "fname": "Verna",
+    "lname": "Ray",
+    "nwid": "vernaray@combogen.com",
     "password": 12345678,
-    "email": "lindsaybriggs@combogen.com",
+    "email": "vernaray@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -14,96 +14,14 @@
     ],
     "applications": [
       {
-        "appTd": 867,
-        "nwId": "lindsaybriggs@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 26
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (886) 591-3280",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Amparo",
-    "lname": "Kemp",
-    "nwid": "amparokemp@combogen.com",
-    "password": 12345678,
-    "email": "amparokemp@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 261,
-        "nwId": "amparokemp@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4431,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 43
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (951) 429-2890",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Bird",
-    "lname": "Mann",
-    "nwid": "birdmann@combogen.com",
-    "password": 12345678,
-    "email": "birdmann@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 477,
-        "nwId": "birdmann@combogen.com",
+        "appTd": 744,
+        "nwId": "vernaray@combogen.com",
         "status": "PENDING",
         "offerLetter": "this is an offer letter",
         "faculty_id": 3423,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
@@ -111,146 +29,41 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": true,
-        "empId": 13
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (811) 487-3937",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Janice",
-    "lname": "Brewer",
-    "nwid": "janicebrewer@combogen.com",
-    "password": 12345678,
-    "email": "janicebrewer@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
+        "empId": 88
+      },
       {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 748,
-        "nwId": "janicebrewer@combogen.com",
-        "status": "REJECTED",
+        "appTd": 370,
+        "nwId": "vernaray@combogen.com",
+        "status": "APPROVED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 4417,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
         "creditHour": 3,
         "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 27
+        "paid": true,
+        "unpaid": false,
+        "empId": 70
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (858) 510-2788",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Selma",
-    "lname": "Simon",
-    "nwid": "selmasimon@combogen.com",
-    "password": 12345678,
-    "email": "selmasimon@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 770,
-        "nwId": "selmasimon@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 55
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (951) 421-3898",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Kaitlin",
-    "lname": "Acosta",
-    "nwid": "kaitlinacosta@combogen.com",
-    "password": 12345678,
-    "email": "kaitlinacosta@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 111,
-        "nwId": "kaitlinacosta@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 71
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (906) 474-3077",
+    "phone": "+1 (854) 528-2938",
     "major": "Computer Science",
     "level": "undergraduate"
   },
   {
-    "fname": "Mann",
-    "lname": "Tyson",
-    "nwid": "manntyson@combogen.com",
+    "fname": "Kelly",
+    "lname": "Andrews",
+    "nwid": "kellyandrews@combogen.com",
     "password": 12345678,
-    "email": "manntyson@combogen.com",
+    "email": "kellyandrews@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -260,32 +73,14 @@
     ],
     "applications": [
       {
-        "appTd": 338,
-        "nwId": "manntyson@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 86
-      },
-      {
-        "appTd": 473,
-        "nwId": "manntyson@combogen.com",
+        "appTd": 527,
+        "nwId": "kellyandrews@combogen.com",
         "status": "APPROVED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
+        "faculty_id": 2242,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -293,23 +88,41 @@
         "courseTitle": "Internship",
         "paid": true,
         "unpaid": true,
-        "empId": 16
+        "empId": 14
+      },
+      {
+        "appTd": 663,
+        "nwId": "kellyandrews@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 64
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (984) 442-3774",
+    "phone": "+1 (956) 437-3696",
     "major": "Computer Science",
-    "level": "undergraduate"
+    "level": "graduate"
   },
   {
-    "fname": "Louise",
-    "lname": "Gates",
-    "nwid": "louisegates@combogen.com",
+    "fname": "Mccormick",
+    "lname": "Burks",
+    "nwid": "mccormickburks@combogen.com",
     "password": 12345678,
-    "email": "louisegates@combogen.com",
+    "email": "mccormickburks@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -319,14 +132,132 @@
     ],
     "applications": [
       {
-        "appTd": 870,
-        "nwId": "louisegates@combogen.com",
-        "status": "APPROVED",
+        "appTd": 369,
+        "nwId": "mccormickburks@combogen.com",
+        "status": "PENDING",
         "offerLetter": "this is an offer letter",
         "faculty_id": 4431,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 64
+      },
+      {
+        "appTd": 314,
+        "nwId": "mccormickburks@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 56
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (906) 458-3531",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Ina",
+    "lname": "Klein",
+    "nwid": "inaklein@combogen.com",
+    "password": 12345678,
+    "email": "inaklein@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 231,
+        "nwId": "inaklein@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3423,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 67
+      },
+      {
+        "appTd": 855,
+        "nwId": "inaklein@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 49
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (892) 421-3408",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Christian",
+    "lname": "Maxwell",
+    "nwid": "christianmaxwell@combogen.com",
+    "password": 12345678,
+    "email": "christianmaxwell@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 601,
+        "nwId": "christianmaxwell@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -335,16 +266,116 @@
         "paid": true,
         "unpaid": false,
         "empId": 71
-      },
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (924) 447-2593",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Elise",
+    "lname": "Morton",
+    "nwid": "elisemorton@combogen.com",
+    "password": 12345678,
+    "email": "elisemorton@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
       {
-        "appTd": 534,
-        "nwId": "louisegates@combogen.com",
-        "status": "PENDING",
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 565,
+        "nwId": "elisemorton@combogen.com",
+        "status": "DROPPED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
+        "faculty_id": 3152,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
+        "empId": 77
+      },
+      {
+        "appTd": 525,
+        "nwId": "elisemorton@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 59
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (899) 566-3727",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Annie",
+    "lname": "Kinney",
+    "nwid": "anniekinney@combogen.com",
+    "password": 12345678,
+    "email": "anniekinney@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 187,
+        "nwId": "anniekinney@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
+        "empId": 10
+      },
+      {
+        "appTd": 646,
+        "nwId": "anniekinney@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3204,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -352,23 +383,82 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": true,
-        "empId": 40
+        "empId": 42
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (968) 500-2197",
+    "phone": "+1 (879) 575-2752",
     "major": "Computer Science",
     "level": "undergraduate"
   },
   {
-    "fname": "Katheryn",
-    "lname": "Cabrera",
-    "nwid": "katheryncabrera@combogen.com",
+    "fname": "Buckley",
+    "lname": "Davenport",
+    "nwid": "buckleydavenport@combogen.com",
     "password": 12345678,
-    "email": "katheryncabrera@combogen.com",
+    "email": "buckleydavenport@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 782,
+        "nwId": "buckleydavenport@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 60
+      },
+      {
+        "appTd": 758,
+        "nwId": "buckleydavenport@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2954,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 54
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (945) 495-2880",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Maryanne",
+    "lname": "Rivera",
+    "nwid": "maryannerivera@combogen.com",
+    "password": 12345678,
+    "email": "maryannerivera@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -379,13 +469,13 @@
     "applications": [
       {
         "appTd": 247,
-        "nwId": "katheryncabrera@combogen.com",
-        "status": "APPROVED",
+        "nwId": "maryannerivera@combogen.com",
+        "status": "PENDING",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
+        "faculty_id": 4417,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -393,17 +483,17 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": true,
-        "empId": 84
+        "empId": 28
       },
       {
-        "appTd": 647,
-        "nwId": "katheryncabrera@combogen.com",
-        "status": "PENDING",
+        "appTd": 281,
+        "nwId": "maryannerivera@combogen.com",
+        "status": "APPROVED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 4431,
+        "faculty_id": 2242,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
@@ -411,6 +501,65 @@
         "courseTitle": "Internship",
         "paid": true,
         "unpaid": false,
+        "empId": 31
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (997) 430-2075",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Snow",
+    "lname": "Hubbard",
+    "nwid": "snowhubbard@combogen.com",
+    "password": 12345678,
+    "email": "snowhubbard@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 608,
+        "nwId": "snowhubbard@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3494,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 43
+      },
+      {
+        "appTd": 505,
+        "nwId": "snowhubbard@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3494,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
         "empId": 85
       }
     ],
@@ -418,16 +567,16 @@
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (941) 592-3182",
+    "phone": "+1 (848) 557-2485",
     "major": "Computer Science",
-    "level": "graduate"
+    "level": "undergraduate"
   },
   {
-    "fname": "Consuelo",
-    "lname": "Collins",
-    "nwid": "consuelocollins@combogen.com",
+    "fname": "Eileen",
+    "lname": "Donaldson",
+    "nwid": "eileendonaldson@combogen.com",
     "password": 12345678,
-    "email": "consuelocollins@combogen.com",
+    "email": "eileendonaldson@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -437,56 +586,56 @@
     ],
     "applications": [
       {
-        "appTd": 103,
-        "nwId": "consuelocollins@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2242,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 76
-      },
-      {
-        "appTd": 174,
-        "nwId": "consuelocollins@combogen.com",
+        "appTd": 711,
+        "nwId": "eileendonaldson@combogen.com",
         "status": "DROPPED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 3423,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
         "creditHour": 3,
         "courseTitle": "Internship",
         "paid": true,
+        "unpaid": true,
+        "empId": 28
+      },
+      {
+        "appTd": 558,
+        "nwId": "eileendonaldson@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
         "unpaid": false,
-        "empId": 57
+        "empId": 71
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (928) 499-3805",
+    "phone": "+1 (804) 450-3955",
     "major": "Computer Science",
     "level": "graduate"
   },
   {
-    "fname": "Henderson",
-    "lname": "Reeves",
-    "nwid": "hendersonreeves@combogen.com",
+    "fname": "Hendricks",
+    "lname": "Guzman",
+    "nwid": "hendricksguzman@combogen.com",
     "password": 12345678,
-    "email": "hendersonreeves@combogen.com",
+    "email": "hendricksguzman@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -496,14 +645,132 @@
     ],
     "applications": [
       {
-        "appTd": 468,
-        "nwId": "hendersonreeves@combogen.com",
-        "status": "APPROVED",
+        "appTd": 685,
+        "nwId": "hendricksguzman@combogen.com",
+        "status": "REJECTED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
+        "faculty_id": 3204,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 88
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (909) 432-2494",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Cantrell",
+    "lname": "Hopper",
+    "nwid": "cantrellhopper@combogen.com",
+    "password": 12345678,
+    "email": "cantrellhopper@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 350,
+        "nwId": "cantrellhopper@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4431,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 63
+      },
+      {
+        "appTd": 446,
+        "nwId": "cantrellhopper@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2954,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 71
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (934) 568-3209",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Sharp",
+    "lname": "Leblanc",
+    "nwid": "sharpleblanc@combogen.com",
+    "password": 12345678,
+    "email": "sharpleblanc@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 385,
+        "nwId": "sharpleblanc@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 88
+      },
+      {
+        "appTd": 440,
+        "nwId": "sharpleblanc@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2954,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -518,75 +785,16 @@
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (843) 504-3454",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Kerry",
-    "lname": "Robles",
-    "nwid": "kerryrobles@combogen.com",
-    "password": 12345678,
-    "email": "kerryrobles@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 360,
-        "nwId": "kerryrobles@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4431,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 29
-      },
-      {
-        "appTd": 139,
-        "nwId": "kerryrobles@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 42
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (898) 562-2391",
+    "phone": "+1 (815) 471-3241",
     "major": "Computer Science",
     "level": "undergraduate"
   },
   {
-    "fname": "Sheppard",
-    "lname": "Hartman",
-    "nwid": "sheppardhartman@combogen.com",
+    "fname": "Lee",
+    "lname": "Livingston",
+    "nwid": "leelivingston@combogen.com",
     "password": 12345678,
-    "email": "sheppardhartman@combogen.com",
+    "email": "leelivingston@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -596,14 +804,32 @@
     ],
     "applications": [
       {
-        "appTd": 844,
-        "nwId": "sheppardhartman@combogen.com",
-        "status": "PENDING",
+        "appTd": 207,
+        "nwId": "leelivingston@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 76
+      },
+      {
+        "appTd": 384,
+        "nwId": "leelivingston@combogen.com",
+        "status": "REJECTED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 4468,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
@@ -611,41 +837,82 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": false,
-        "empId": 11
-      },
-      {
-        "appTd": 315,
-        "nwId": "sheppardhartman@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 15
+        "empId": 74
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (879) 548-3786",
+    "phone": "+1 (906) 502-2238",
     "major": "Computer Science",
-    "level": "graduate"
+    "level": "undergraduate"
   },
   {
-    "fname": "Lorna",
-    "lname": "Ware",
-    "nwid": "lornaware@combogen.com",
+    "fname": "Kathryn",
+    "lname": "Talley",
+    "nwid": "kathryntalley@combogen.com",
     "password": 12345678,
-    "email": "lornaware@combogen.com",
+    "email": "kathryntalley@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 324,
+        "nwId": "kathryntalley@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 14
+      },
+      {
+        "appTd": 823,
+        "nwId": "kathryntalley@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
+        "empId": 83
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (890) 533-3624",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Simpson",
+    "lname": "Hoover",
+    "nwid": "simpsonhoover@combogen.com",
+    "password": 12345678,
+    "email": "simpsonhoover@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -656,13 +923,13 @@
     "applications": [
       {
         "appTd": 335,
-        "nwId": "lornaware@combogen.com",
+        "nwId": "simpsonhoover@combogen.com",
         "status": "REJECTED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
+        "faculty_id": 3204,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -670,41 +937,23 @@
         "courseTitle": "Internship",
         "paid": true,
         "unpaid": true,
-        "empId": 81
-      },
-      {
-        "appTd": 382,
-        "nwId": "lornaware@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4468,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 63
+        "empId": 48
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (895) 430-3565",
+    "phone": "+1 (987) 474-2179",
     "major": "Computer Science",
     "level": "graduate"
   },
   {
-    "fname": "Lucia",
-    "lname": "Lang",
-    "nwid": "lucialang@combogen.com",
+    "fname": "Josie",
+    "lname": "Burt",
+    "nwid": "josieburt@combogen.com",
     "password": 12345678,
-    "email": "lucialang@combogen.com",
+    "email": "josieburt@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -714,414 +963,14 @@
     ],
     "applications": [
       {
-        "appTd": 303,
-        "nwId": "lucialang@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2954,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 80
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (991) 432-2613",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Garrett",
-    "lname": "Montgomery",
-    "nwid": "garrettmontgomery@combogen.com",
-    "password": 12345678,
-    "email": "garrettmontgomery@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 313,
-        "nwId": "garrettmontgomery@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 40
-      },
-      {
-        "appTd": 192,
-        "nwId": "garrettmontgomery@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2954,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 44
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (995) 466-3201",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Marilyn",
-    "lname": "Rice",
-    "nwid": "marilynrice@combogen.com",
-    "password": 12345678,
-    "email": "marilynrice@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 118,
-        "nwId": "marilynrice@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4431,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 10
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (843) 529-2738",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Rush",
-    "lname": "Moon",
-    "nwid": "rushmoon@combogen.com",
-    "password": 12345678,
-    "email": "rushmoon@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 454,
-        "nwId": "rushmoon@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4468,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 72
-      },
-      {
-        "appTd": 733,
-        "nwId": "rushmoon@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4417,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 28
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (912) 456-2709",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Miller",
-    "lname": "Perry",
-    "nwid": "millerperry@combogen.com",
-    "password": 12345678,
-    "email": "millerperry@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 495,
-        "nwId": "millerperry@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2954,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 15
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (887) 411-3338",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Rosanna",
-    "lname": "Cameron",
-    "nwid": "rosannacameron@combogen.com",
-    "password": 12345678,
-    "email": "rosannacameron@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 870,
-        "nwId": "rosannacameron@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2242,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 70
-      },
-      {
-        "appTd": 389,
-        "nwId": "rosannacameron@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3152,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 35
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (911) 568-3924",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Jane",
-    "lname": "Lyons",
-    "nwid": "janelyons@combogen.com",
-    "password": 12345678,
-    "email": "janelyons@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 855,
-        "nwId": "janelyons@combogen.com",
+        "appTd": 257,
+        "nwId": "josieburt@combogen.com",
         "status": "APPROVED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 4417,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 39
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (861) 516-2313",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Olsen",
-    "lname": "Ferguson",
-    "nwid": "olsenferguson@combogen.com",
-    "password": 12345678,
-    "email": "olsenferguson@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 852,
-        "nwId": "olsenferguson@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 43
-      },
-      {
-        "appTd": 131,
-        "nwId": "olsenferguson@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 70
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (805) 491-3497",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Deanne",
-    "lname": "Chase",
-    "nwid": "deannechase@combogen.com",
-    "password": 12345678,
-    "email": "deannechase@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 887,
-        "nwId": "deannechase@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1129,129 +978,6 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": true,
-        "empId": 80
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (807) 413-2538",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Lopez",
-    "lname": "Serrano",
-    "nwid": "lopezserrano@combogen.com",
-    "password": 12345678,
-    "email": "lopezserrano@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 213,
-        "nwId": "lopezserrano@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4468,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 20
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (805) 450-2940",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Ava",
-    "lname": "Ingram",
-    "nwid": "avaingram@combogen.com",
-    "password": 12345678,
-    "email": "avaingram@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 271,
-        "nwId": "avaingram@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 36
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (860) 454-2806",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Martinez",
-    "lname": "Sawyer",
-    "nwid": "martinezsawyer@combogen.com",
-    "password": 12345678,
-    "email": "martinezsawyer@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 331,
-        "nwId": "martinezsawyer@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
         "empId": 54
       }
     ],
@@ -1259,16 +985,16 @@
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (875) 482-3487",
+    "phone": "+1 (981) 415-2549",
     "major": "Computer Science",
-    "level": "graduate"
+    "level": "undergraduate"
   },
   {
-    "fname": "Melton",
-    "lname": "Combs",
-    "nwid": "meltoncombs@combogen.com",
+    "fname": "Winnie",
+    "lname": "Curry",
+    "nwid": "winniecurry@combogen.com",
     "password": 12345678,
-    "email": "meltoncombs@combogen.com",
+    "email": "winniecurry@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1278,32 +1004,55 @@
     ],
     "applications": [
       {
-        "appTd": 190,
-        "nwId": "meltoncombs@combogen.com",
-        "status": "DROPPED",
+        "appTd": 848,
+        "nwId": "winniecurry@combogen.com",
+        "status": "REJECTED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
+        "faculty_id": 3599,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
         "creditHour": 3,
         "courseTitle": "Internship",
         "paid": false,
-        "unpaid": true,
-        "empId": 70
-      },
+        "unpaid": false,
+        "empId": 85
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (927) 436-2900",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Greer",
+    "lname": "Morgan",
+    "nwid": "greermorgan@combogen.com",
+    "password": 12345678,
+    "email": "greermorgan@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
       {
-        "appTd": 688,
-        "nwId": "meltoncombs@combogen.com",
-        "status": "PENDING",
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 131,
+        "nwId": "greermorgan@combogen.com",
+        "status": "DROPPED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
+        "faculty_id": 3152,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1312,22 +1061,40 @@
         "paid": true,
         "unpaid": false,
         "empId": 47
+      },
+      {
+        "appTd": 304,
+        "nwId": "greermorgan@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3204,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 27
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (962) 428-3158",
+    "phone": "+1 (978) 591-2434",
     "major": "Computer Science",
     "level": "undergraduate"
   },
   {
-    "fname": "Kelly",
-    "lname": "Rowland",
-    "nwid": "kellyrowland@combogen.com",
+    "fname": "Webb",
+    "lname": "Guerrero",
+    "nwid": "webbguerrero@combogen.com",
     "password": 12345678,
-    "email": "kellyrowland@combogen.com",
+    "email": "webbguerrero@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1337,14 +1104,114 @@
     ],
     "applications": [
       {
-        "appTd": 367,
-        "nwId": "kellyrowland@combogen.com",
+        "appTd": 129,
+        "nwId": "webbguerrero@combogen.com",
         "status": "APPROVED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 2954,
+        "faculty_id": 3599,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 69
+      },
+      {
+        "appTd": 875,
+        "nwId": "webbguerrero@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 34
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (958) 562-2044",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Copeland",
+    "lname": "Mcbride",
+    "nwid": "copelandmcbride@combogen.com",
+    "password": 12345678,
+    "email": "copelandmcbride@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 656,
+        "nwId": "copelandmcbride@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3423,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 54
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (840) 550-3770",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Maricela",
+    "lname": "Hopkins",
+    "nwid": "maricelahopkins@combogen.com",
+    "password": 12345678,
+    "email": "maricelahopkins@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 111,
+        "nwId": "maricelahopkins@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1359,16 +1226,16 @@
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (837) 522-3978",
+    "phone": "+1 (946) 412-3888",
     "major": "Computer Science",
     "level": "graduate"
   },
   {
-    "fname": "Beverly",
-    "lname": "Delaney",
-    "nwid": "beverlydelaney@combogen.com",
+    "fname": "Francis",
+    "lname": "Benjamin",
+    "nwid": "francisbenjamin@combogen.com",
     "password": 12345678,
-    "email": "beverlydelaney@combogen.com",
+    "email": "francisbenjamin@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1378,14 +1245,14 @@
     ],
     "applications": [
       {
-        "appTd": 387,
-        "nwId": "beverlydelaney@combogen.com",
+        "appTd": 712,
+        "nwId": "francisbenjamin@combogen.com",
         "status": "REJECTED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 4417,
+        "faculty_id": 3494,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1393,23 +1260,23 @@
         "courseTitle": "Internship",
         "paid": true,
         "unpaid": true,
-        "empId": 34
+        "empId": 42
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (859) 541-3011",
+    "phone": "+1 (970) 572-3533",
     "major": "Computer Science",
-    "level": "undergraduate"
+    "level": "graduate"
   },
   {
-    "fname": "Dudley",
-    "lname": "Baxter",
-    "nwid": "dudleybaxter@combogen.com",
+    "fname": "Hester",
+    "lname": "Diaz",
+    "nwid": "hesterdiaz@combogen.com",
     "password": 12345678,
-    "email": "dudleybaxter@combogen.com",
+    "email": "hesterdiaz@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1419,14 +1286,732 @@
     ],
     "applications": [
       {
-        "appTd": 707,
-        "nwId": "dudleybaxter@combogen.com",
+        "appTd": 261,
+        "nwId": "hesterdiaz@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2242,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
+        "empId": 28
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (804) 585-2520",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Deana",
+    "lname": "Hyde",
+    "nwid": "deanahyde@combogen.com",
+    "password": 12345678,
+    "email": "deanahyde@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 473,
+        "nwId": "deanahyde@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3423,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 52
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (984) 541-2143",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Lynnette",
+    "lname": "Fisher",
+    "nwid": "lynnettefisher@combogen.com",
+    "password": 12345678,
+    "email": "lynnettefisher@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 353,
+        "nwId": "lynnettefisher@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 68
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (903) 464-2632",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Nell",
+    "lname": "Boone",
+    "nwid": "nellboone@combogen.com",
+    "password": 12345678,
+    "email": "nellboone@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 257,
+        "nwId": "nellboone@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 15
+      },
+      {
+        "appTd": 354,
+        "nwId": "nellboone@combogen.com",
         "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2242,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 33
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (865) 504-2710",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Hansen",
+    "lname": "Acosta",
+    "nwid": "hansenacosta@combogen.com",
+    "password": 12345678,
+    "email": "hansenacosta@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 443,
+        "nwId": "hansenacosta@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3423,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
+        "empId": 69
+      },
+      {
+        "appTd": 264,
+        "nwId": "hansenacosta@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 81
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (811) 523-2111",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Ruby",
+    "lname": "Sharp",
+    "nwid": "rubysharp@combogen.com",
+    "password": 12345678,
+    "email": "rubysharp@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 169,
+        "nwId": "rubysharp@combogen.com",
+        "status": "DROPPED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 4431,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 25
+      },
+      {
+        "appTd": 448,
+        "nwId": "rubysharp@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 57
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (829) 495-3751",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Gay",
+    "lname": "Cruz",
+    "nwid": "gaycruz@combogen.com",
+    "password": 12345678,
+    "email": "gaycruz@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 235,
+        "nwId": "gaycruz@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 32
+      },
+      {
+        "appTd": 561,
+        "nwId": "gaycruz@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4431,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 10
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (917) 447-3491",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Phoebe",
+    "lname": "Luna",
+    "nwid": "phoebeluna@combogen.com",
+    "password": 12345678,
+    "email": "phoebeluna@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 319,
+        "nwId": "phoebeluna@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 70
+      },
+      {
+        "appTd": 852,
+        "nwId": "phoebeluna@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": true,
+        "empId": 57
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (810) 579-2498",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Vicki",
+    "lname": "Chapman",
+    "nwid": "vickichapman@combogen.com",
+    "password": 12345678,
+    "email": "vickichapman@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 202,
+        "nwId": "vickichapman@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3152,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 68
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (884) 490-2988",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Jodi",
+    "lname": "Gutierrez",
+    "nwid": "jodigutierrez@combogen.com",
+    "password": 12345678,
+    "email": "jodigutierrez@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 183,
+        "nwId": "jodigutierrez@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 34
+      },
+      {
+        "appTd": 413,
+        "nwId": "jodigutierrez@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 39
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (827) 524-3835",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Melton",
+    "lname": "Horton",
+    "nwid": "meltonhorton@combogen.com",
+    "password": 12345678,
+    "email": "meltonhorton@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 593,
+        "nwId": "meltonhorton@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3204,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 37
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (826) 423-2054",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Silva",
+    "lname": "Glass",
+    "nwid": "silvaglass@combogen.com",
+    "password": 12345678,
+    "email": "silvaglass@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 734,
+        "nwId": "silvaglass@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 74
+      },
+      {
+        "appTd": 631,
+        "nwId": "silvaglass@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4417,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 78
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (894) 400-3606",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Leonor",
+    "lname": "Pacheco",
+    "nwid": "leonorpacheco@combogen.com",
+    "password": 12345678,
+    "email": "leonorpacheco@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 847,
+        "nwId": "leonorpacheco@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 36
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (895) 549-3229",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Delaney",
+    "lname": "Cabrera",
+    "nwid": "delaneycabrera@combogen.com",
+    "password": 12345678,
+    "email": "delaneycabrera@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 814,
+        "nwId": "delaneycabrera@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4431,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 72
+      },
+      {
+        "appTd": 118,
+        "nwId": "delaneycabrera@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 86
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (857) 582-3540",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Lorie",
+    "lname": "Walsh",
+    "nwid": "loriewalsh@combogen.com",
+    "password": 12345678,
+    "email": "loriewalsh@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 492,
+        "nwId": "loriewalsh@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2242,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1437,38 +2022,38 @@
         "empId": 25
       },
       {
-        "appTd": 473,
-        "nwId": "dudleybaxter@combogen.com",
-        "status": "PENDING",
+        "appTd": 235,
+        "nwId": "loriewalsh@combogen.com",
+        "status": "APPROVED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3152,
+        "faculty_id": 4468,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
         "creditHour": 3,
         "courseTitle": "Internship",
         "paid": true,
-        "unpaid": false,
-        "empId": 56
+        "unpaid": true,
+        "empId": 28
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (944) 417-2572",
+    "phone": "+1 (941) 456-2102",
     "major": "Computer Science",
-    "level": "graduate"
+    "level": "undergraduate"
   },
   {
-    "fname": "Blake",
-    "lname": "Reynolds",
-    "nwid": "blakereynolds@combogen.com",
+    "fname": "Blanche",
+    "lname": "Roman",
+    "nwid": "blancheroman@combogen.com",
     "password": 12345678,
-    "email": "blakereynolds@combogen.com",
+    "email": "blancheroman@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1478,32 +2063,32 @@
     ],
     "applications": [
       {
-        "appTd": 216,
-        "nwId": "blakereynolds@combogen.com",
+        "appTd": 179,
+        "nwId": "blancheroman@combogen.com",
+        "status": "DROPPED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3423,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 65
+      },
+      {
+        "appTd": 375,
+        "nwId": "blancheroman@combogen.com",
         "status": "PENDING",
         "offerLetter": "this is an offer letter",
         "faculty_id": 2242,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 67
-      },
-      {
-        "appTd": 196,
-        "nwId": "blakereynolds@combogen.com",
-        "status": "APPROVED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4468,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1511,264 +2096,23 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": false,
-        "empId": 15
+        "empId": 48
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (993) 473-3054",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Meredith",
-    "lname": "Parks",
-    "nwid": "meredithparks@combogen.com",
-    "password": 12345678,
-    "email": "meredithparks@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 479,
-        "nwId": "meredithparks@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 70
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (941) 423-2012",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Isabella",
-    "lname": "George",
-    "nwid": "isabellageorge@combogen.com",
-    "password": 12345678,
-    "email": "isabellageorge@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 277,
-        "nwId": "isabellageorge@combogen.com",
-        "status": "APPROVED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 36
-      },
-      {
-        "appTd": 298,
-        "nwId": "isabellageorge@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4468,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 20
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (833) 453-2344",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Earlene",
-    "lname": "Williamson",
-    "nwid": "earlenewilliamson@combogen.com",
-    "password": 12345678,
-    "email": "earlenewilliamson@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 173,
-        "nwId": "earlenewilliamson@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 80
-      },
-      {
-        "appTd": 180,
-        "nwId": "earlenewilliamson@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 39
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (918) 558-3181",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Monica",
-    "lname": "Myers",
-    "nwid": "monicamyers@combogen.com",
-    "password": 12345678,
-    "email": "monicamyers@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 114,
-        "nwId": "monicamyers@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3152,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 33
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (927) 436-2417",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Jody",
-    "lname": "Burgess",
-    "nwid": "jodyburgess@combogen.com",
-    "password": 12345678,
-    "email": "jodyburgess@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 761,
-        "nwId": "jodyburgess@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 29
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (921) 518-2726",
+    "phone": "+1 (891) 442-3846",
     "major": "Computer Science",
     "level": "graduate"
   },
   {
-    "fname": "Cobb",
-    "lname": "Abbott",
-    "nwid": "cobbabbott@combogen.com",
+    "fname": "Kaufman",
+    "lname": "Eaton",
+    "nwid": "kaufmaneaton@combogen.com",
     "password": 12345678,
-    "email": "cobbabbott@combogen.com",
+    "email": "kaufmaneaton@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1779,31 +2123,13 @@
     "applications": [
       {
         "appTd": 595,
-        "nwId": "cobbabbott@combogen.com",
-        "status": "PENDING",
+        "nwId": "kaufmaneaton@combogen.com",
+        "status": "APPROVED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 2242,
+        "faculty_id": 2954,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 40
-      },
-      {
-        "appTd": 487,
-        "nwId": "cobbabbott@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1818,116 +2144,16 @@
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (841) 536-2427",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Spence",
-    "lname": "Mendez",
-    "nwid": "spencemendez@combogen.com",
-    "password": 12345678,
-    "email": "spencemendez@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 496,
-        "nwId": "spencemendez@combogen.com",
-        "status": "APPROVED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2954,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 51
-      },
-      {
-        "appTd": 171,
-        "nwId": "spencemendez@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 64
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (838) 505-2288",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Michael",
-    "lname": "Clarke",
-    "nwid": "michaelclarke@combogen.com",
-    "password": 12345678,
-    "email": "michaelclarke@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 518,
-        "nwId": "michaelclarke@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2242,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": false,
-        "empId": 36
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (927) 469-2243",
+    "phone": "+1 (888) 445-2557",
     "major": "Computer Science",
     "level": "undergraduate"
   },
   {
-    "fname": "Boone",
-    "lname": "Vinson",
-    "nwid": "boonevinson@combogen.com",
+    "fname": "Terra",
+    "lname": "Farley",
+    "nwid": "terrafarley@combogen.com",
     "password": 12345678,
-    "email": "boonevinson@combogen.com",
+    "email": "terrafarley@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1937,14 +2163,14 @@
     ],
     "applications": [
       {
-        "appTd": 530,
-        "nwId": "boonevinson@combogen.com",
-        "status": "DROPPED",
+        "appTd": 188,
+        "nwId": "terrafarley@combogen.com",
+        "status": "REJECTED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 3152,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -1952,41 +2178,23 @@
         "courseTitle": "Internship",
         "paid": true,
         "unpaid": true,
-        "empId": 67
-      },
-      {
-        "appTd": 142,
-        "nwId": "boonevinson@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3152,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 38
+        "empId": 20
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (847) 509-3274",
+    "phone": "+1 (942) 594-3550",
     "major": "Computer Science",
-    "level": "undergraduate"
+    "level": "graduate"
   },
   {
-    "fname": "Shawn",
-    "lname": "Randolph",
-    "nwid": "shawnrandolph@combogen.com",
+    "fname": "Julie",
+    "lname": "Levy",
+    "nwid": "julielevy@combogen.com",
     "password": 12345678,
-    "email": "shawnrandolph@combogen.com",
+    "email": "julielevy@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -1996,73 +2204,14 @@
     ],
     "applications": [
       {
-        "appTd": 560,
-        "nwId": "shawnrandolph@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 42
-      },
-      {
-        "appTd": 595,
-        "nwId": "shawnrandolph@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4417,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 69
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (823) 453-3677",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Angeline",
-    "lname": "Sharpe",
-    "nwid": "angelinesharpe@combogen.com",
-    "password": 12345678,
-    "email": "angelinesharpe@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 535,
-        "nwId": "angelinesharpe@combogen.com",
+        "appTd": 346,
+        "nwId": "julielevy@combogen.com",
         "status": "REJECTED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 3204,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -2070,23 +2219,23 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": false,
-        "empId": 56
+        "empId": 35
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (857) 572-3096",
+    "phone": "+1 (981) 431-3574",
     "major": "Computer Science",
     "level": "undergraduate"
   },
   {
-    "fname": "Obrien",
-    "lname": "Matthews",
-    "nwid": "obrienmatthews@combogen.com",
+    "fname": "Elsie",
+    "lname": "Parrish",
+    "nwid": "elsieparrish@combogen.com",
     "password": 12345678,
-    "email": "obrienmatthews@combogen.com",
+    "email": "elsieparrish@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -2096,73 +2245,14 @@
     ],
     "applications": [
       {
-        "appTd": 329,
-        "nwId": "obrienmatthews@combogen.com",
-        "status": "REJECTED",
+        "appTd": 730,
+        "nwId": "elsieparrish@combogen.com",
+        "status": "APPROVED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 4417,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 11
-      },
-      {
-        "appTd": 146,
-        "nwId": "obrienmatthews@combogen.com",
-        "status": "APPROVED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3204,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 72
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (988) 526-2655",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Mack",
-    "lname": "Stephenson",
-    "nwid": "mackstephenson@combogen.com",
-    "password": 12345678,
-    "email": "mackstephenson@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 363,
-        "nwId": "mackstephenson@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2954,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
@@ -2170,224 +2260,6 @@
         "courseTitle": "Internship",
         "paid": true,
         "unpaid": false,
-        "empId": 38
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (966) 420-2916",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Haley",
-    "lname": "Klein",
-    "nwid": "haleyklein@combogen.com",
-    "password": 12345678,
-    "email": "haleyklein@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 159,
-        "nwId": "haleyklein@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": false,
-        "empId": 43
-      },
-      {
-        "appTd": 171,
-        "nwId": "haleyklein@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3494,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 70
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (983) 589-2860",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Ellis",
-    "lname": "Spencer",
-    "nwid": "ellisspencer@combogen.com",
-    "password": 12345678,
-    "email": "ellisspencer@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 732,
-        "nwId": "ellisspencer@combogen.com",
-        "status": "PENDING",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4468,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 63
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (981) 592-3695",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Hart",
-    "lname": "Flowers",
-    "nwid": "hartflowers@combogen.com",
-    "password": 12345678,
-    "email": "hartflowers@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 111,
-        "nwId": "hartflowers@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 4431,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": true,
-        "unpaid": true,
-        "empId": 80
-      },
-      {
-        "appTd": 871,
-        "nwId": "hartflowers@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3599,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 25
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (807) 544-2574",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Katelyn",
-    "lname": "Reyes",
-    "nwid": "katelynreyes@combogen.com",
-    "password": 12345678,
-    "email": "katelynreyes@combogen.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
-        "appTd": 138,
-        "nwId": "katelynreyes@combogen.com",
-        "status": "DROPPED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 2242,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
-        "empId": 88
-      },
-      {
-        "appTd": 208,
-        "nwId": "katelynreyes@combogen.com",
-        "status": "REJECTED",
-        "offerLetter": "this is an offer letter",
-        "faculty_id": 3152,
-        "startDate": "",
-        "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
-        "year": "",
-        "crn": 123,
-        "section": "",
-        "creditHour": 3,
-        "courseTitle": "Internship",
-        "paid": false,
-        "unpaid": true,
         "empId": 75
       }
     ],
@@ -2395,16 +2267,16 @@
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (996) 527-2133",
+    "phone": "+1 (953) 561-2103",
     "major": "Computer Science",
-    "level": "undergraduate"
+    "level": "graduate"
   },
   {
-    "fname": "Winnie",
-    "lname": "Campos",
-    "nwid": "winniecampos@combogen.com",
+    "fname": "Zamora",
+    "lname": "Knowles",
+    "nwid": "zamoraknowles@combogen.com",
     "password": 12345678,
-    "email": "winniecampos@combogen.com",
+    "email": "zamoraknowles@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -2414,14 +2286,32 @@
     ],
     "applications": [
       {
-        "appTd": 462,
-        "nwId": "winniecampos@combogen.com",
-        "status": "REJECTED",
+        "appTd": 884,
+        "nwId": "zamoraknowles@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": true,
+        "empId": 57
+      },
+      {
+        "appTd": 204,
+        "nwId": "zamoraknowles@combogen.com",
+        "status": "APPROVED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 3423,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Summer",
         "year": "",
         "crn": 123,
         "section": "",
@@ -2429,23 +2319,23 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": false,
-        "empId": 29
+        "empId": 90
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (846) 464-3677",
+    "phone": "+1 (870) 562-3889",
     "major": "Computer Science",
-    "level": "undergraduate"
+    "level": "graduate"
   },
   {
-    "fname": "Bentley",
-    "lname": "Rush",
-    "nwid": "bentleyrush@combogen.com",
+    "fname": "Tina",
+    "lname": "Barlow",
+    "nwid": "tinabarlow@combogen.com",
     "password": 12345678,
-    "email": "bentleyrush@combogen.com",
+    "email": "tinabarlow@combogen.com",
     "dept": "Computer Science",
     "roles": [
       {
@@ -2455,32 +2345,32 @@
     ],
     "applications": [
       {
-        "appTd": 358,
-        "nwId": "bentleyrush@combogen.com",
-        "status": "PENDING",
+        "appTd": 198,
+        "nwId": "tinabarlow@combogen.com",
+        "status": "DROPPED",
         "offerLetter": "this is an offer letter",
-        "faculty_id": 3423,
+        "faculty_id": 4468,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Fall",
         "year": "",
         "crn": 123,
         "section": "",
         "creditHour": 3,
         "courseTitle": "Internship",
         "paid": false,
-        "unpaid": false,
-        "empId": 55
+        "unpaid": true,
+        "empId": 51
       },
       {
-        "appTd": 467,
-        "nwId": "bentleyrush@combogen.com",
-        "status": "PENDING",
+        "appTd": 531,
+        "nwId": "tinabarlow@combogen.com",
+        "status": "REJECTED",
         "offerLetter": "this is an offer letter",
         "faculty_id": 2954,
         "startDate": "",
         "endDate": "",
-        "term": "<ReferenceError: Random is not defined>",
+        "term": "Spring",
         "year": "",
         "crn": 123,
         "section": "",
@@ -2488,15 +2378,197 @@
         "courseTitle": "Internship",
         "paid": false,
         "unpaid": false,
-        "empId": 45
+        "empId": 78
       }
     ],
     "street": "800 University Drive",
     "city": "Maryville",
     "state": "Missouri",
     "zipcode": 64468,
-    "phone": "+1 (899) 521-2006",
+    "phone": "+1 (992) 580-2893",
     "major": "Computer Science",
     "level": "undergraduate"
+  },
+  {
+    "fname": "Monique",
+    "lname": "Park",
+    "nwid": "moniquepark@combogen.com",
+    "password": 12345678,
+    "email": "moniquepark@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 781,
+        "nwId": "moniquepark@combogen.com",
+        "status": "APPROVED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3494,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 57
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (914) 579-3184",
+    "major": "Computer Science",
+    "level": "graduate"
+  },
+  {
+    "fname": "Lucia",
+    "lname": "Pierce",
+    "nwid": "luciapierce@combogen.com",
+    "password": 12345678,
+    "email": "luciapierce@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 509,
+        "nwId": "luciapierce@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3599,
+        "startDate": "",
+        "endDate": "",
+        "term": "Fall",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 60
+      },
+      {
+        "appTd": 806,
+        "nwId": "luciapierce@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 3494,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 48
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (885) 418-2570",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Cecile",
+    "lname": "Craft",
+    "nwid": "cecilecraft@combogen.com",
+    "password": 12345678,
+    "email": "cecilecraft@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 896,
+        "nwId": "cecilecraft@combogen.com",
+        "status": "REJECTED",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 2954,
+        "startDate": "",
+        "endDate": "",
+        "term": "Spring",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": false,
+        "unpaid": false,
+        "empId": 84
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (815) 493-2653",
+    "major": "Computer Science",
+    "level": "undergraduate"
+  },
+  {
+    "fname": "Mccoy",
+    "lname": "Williamson",
+    "nwid": "mccoywilliamson@combogen.com",
+    "password": 12345678,
+    "email": "mccoywilliamson@combogen.com",
+    "dept": "Computer Science",
+    "roles": [
+      {
+        "id": 1703431468665194500,
+        "name": "ROLE_USER"
+      }
+    ],
+    "applications": [
+      {
+        "appTd": 292,
+        "nwId": "mccoywilliamson@combogen.com",
+        "status": "PENDING",
+        "offerLetter": "this is an offer letter",
+        "faculty_id": 4468,
+        "startDate": "",
+        "endDate": "",
+        "term": "Summer",
+        "year": "",
+        "crn": 123,
+        "section": "",
+        "creditHour": 3,
+        "courseTitle": "Internship",
+        "paid": true,
+        "unpaid": false,
+        "empId": 54
+      }
+    ],
+    "street": "800 University Drive",
+    "city": "Maryville",
+    "state": "Missouri",
+    "zipcode": 64468,
+    "phone": "+1 (829) 457-3557",
+    "major": "Computer Science",
+    "level": "graduate"
   }
 ]
