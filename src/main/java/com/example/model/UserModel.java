@@ -45,17 +45,17 @@ public class UserModel {
     
     //private EmployerModel employer;
 
-    // @PersistenceConstructor
-    public UserModel( Long id, String fName, String lName, String nwId, /*String email, String dept,*/ String password, Collection<Role> roles) {
-        this.id = id;
-        this.fName = fName;
-        this.lName = lName;
-        this.nwId = nwId;
-        this.password = password;
-        this.roles = roles;
-        //this.email = email;
-        //this.dept = dept;
-    }
+    // //@PersistenceConstructor
+    // public UserModel( Long id, String fName, String lName, String nwId, /*String email, String dept,*/ String password, Collection<Role> roles) {
+    //     this.id = id;
+    //     this.fName = fName;
+    //     this.lName = lName;
+    //     this.nwId = nwId;
+    //     this.password = password;
+    //     this.roles = roles;
+    //     //this.email = email;
+    //     //this.dept = dept;
+    // }
 
     
     // public UserModel(Long id, String fName, String lName, String nwId, String password, Collection<Role> roles,

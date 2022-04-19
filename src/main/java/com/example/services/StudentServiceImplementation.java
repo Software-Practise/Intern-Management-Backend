@@ -203,6 +203,13 @@ public class StudentServiceImplementation implements StudentService {
         return applicationRepository.findByAppId(appId);
     }
 
+    public UserModel updateUser(UserModel user){
+        //UserModel test = userRepository.findBynwId(nwId);
+        //test.setPhoneNumber(user.getPhoneNumber());
+        //test.setStreet(user.getStreet());
+        return userRepository.save(user);
+    }
+
     
 
     
