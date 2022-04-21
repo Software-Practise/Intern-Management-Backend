@@ -87,6 +87,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/api/login/**", "/api/token/refresh/**").permitAll();
         http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/user/**").hasAnyAuthority("ROLE_USER");
         http.authorizeRequests().antMatchers(HttpMethod.POST, "/api/user/save").hasAnyAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers(HttpMethod.POST, "/api/student/students/**").hasAnyAuthority("ROLE_USER");
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/student/students").hasAnyAuthority("ROLE_FACULTY");
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/student/students/**").hasAnyAuthority("ROLE_USER");
+        http.authorizeRequests().antMatchers(HttpMethod.POST, "/api/faculty/faculties/add").hasAnyAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/faculty/**").hasAnyAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers(HttpMethod.POST, "/api/faculty/faculties/update").hasAnyAuthority("ROLE_FACULTY");
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/student/application").hasAnyAuthority("ROLE_FACULTY");
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/student/application/**").hasAnyAuthority("ROLE_USER");
+
         http.authorizeRequests().anyRequest().authenticated();
         http.addFilter(customAuthenticationFilter);
         http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
