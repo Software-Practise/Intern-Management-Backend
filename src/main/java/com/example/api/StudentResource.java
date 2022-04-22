@@ -99,6 +99,13 @@ public class StudentResource {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/{nwId}/comments/{appId}").toUriString());
         return ResponseEntity.created(uri).body(studentService.addComment(nwId, comment, appId));
     }
+
+    @GetMapping("/students/withApplication")
+    public ResponseEntity<?> getStudentsWithApplication(){
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/withApplication").toUriString());
+        return ResponseEntity.created(uri).body(studentService.getStudentWithApplication());
+    }
+
 }
 
 @Data

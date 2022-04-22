@@ -30,16 +30,16 @@ public class EmployerResource {
         return ResponseEntity.ok().body(employerService.getEmployers());
     }
 
-    @GetMapping("/employers/{employerId}")
+    @GetMapping("/employers/{empId}")
     @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
-    public ResponseEntity<EmployerModel> getEmployer(String employerId) {
-        return ResponseEntity.ok().body(employerService.getEmployer(employerId));
+    public ResponseEntity<EmployerModel> getEmployer(@PathVariable Long empId) {
+        return ResponseEntity.ok().body(employerService.getEmployer(empId));
     }
 
 
     // NEEDED??
     @DeleteMapping("/employers/delete/{employerId}")
-    public String deleteEmployer(@PathVariable String employerId) {
+    public String deleteEmployer(@PathVariable Long employerId) {
         return employerService.deleteEmployer(employerId);
     }
 
