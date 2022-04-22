@@ -26,7 +26,6 @@ public class LoadDataCLR implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         logger.info("COMMAND LINE RUNNER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        userService.clearDB();
 
         EmployerModel steveJ = new EmployerModel(new Random().nextLong(),"Steve", "Jobs", "stevej", "4312", "Apple St.", "Washington", "3223", "6234568383", "stevejobs@aol.com", "Yapple");
         UserModel travoltaj = new UserModel(new Random().nextLong(),"John", "Travolta", "travoltaj", "1234", new ArrayList<>());

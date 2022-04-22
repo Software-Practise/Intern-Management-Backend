@@ -55,3 +55,5 @@ build/
 ### VS Code ###
 .vscode/
 application.properties
+sample_data/Untitled.ipynb
+sample_data/.ipynb_checkpoints/Untitled-checkpoint.ipynb
