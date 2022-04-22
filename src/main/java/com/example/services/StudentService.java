@@ -15,6 +15,7 @@ public interface StudentService {
     Application setStatus(Long appId, String nwId, String status);
     List<UserModel> getStudents();
     List<Application> getStudentByFaculty(String nwid);
+    List<UserModel> getStudentWithApplication();
     Application addApplication(String nwId, Long empId, Application application);
     Application dropApplication(Long appId, String nwId);
     EmployerModel saveEmployer(EmployerModel employer);

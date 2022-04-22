@@ -203,6 +203,20 @@ public class StudentServiceImplementation implements StudentService {
         return applicationRepository.findByAppId(appId);
     }
 
+
+    @Override
+    public List<UserModel> getStudentWithApplication() {
+       List<UserModel> allApp = userRepository.findAll();
+       List<UserModel> result = new ArrayList<>();
+       for(UserModel user : allApp) {
+           if(user.getApplications().size() != 0) {
+               result.add(user);
+           }
+
+       }
+        return result;
+    }
+
     
 
     

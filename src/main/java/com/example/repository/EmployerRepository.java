@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployerRepository extends MongoRepository<EmployerModel, Long> {
-    EmployerModel findByEmployerId(@Param("employerId") String employerId); // Searching for the String employerId, if you use the "findById" then it
+    EmployerModel findByEmpId(@Param("empId") Long empId); // Searching for the String employerId, if you use the "findById" then it
     // expects a long based on how the database was set up.
-    void deleteByEmployerId(String employerId);
+    void deleteByEmployerId(Long empId);
 }

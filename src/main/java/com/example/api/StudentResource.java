@@ -100,6 +100,12 @@ public class StudentResource {
         return ResponseEntity.created(uri).body(studentService.addComment(nwId, comment, appId));
     }
 
+    @GetMapping("/students/withApplication")
+    public ResponseEntity<?> getStudentsWithApplication(){
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/withApplication").toUriString());
+        return ResponseEntity.created(uri).body(studentService.getStudentWithApplication());
+    }
+
     @GetMapping("/students/{nwId}/completeApplications")
     public ResponseEntity<?> getCompleteApps(@PathVariable String nwId){
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/application/{appId}").toUriString());
@@ -117,6 +123,7 @@ public class StudentResource {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/application/{appId}").toUriString());
         return ResponseEntity.created(uri).body(studentService.getApps(nwId));
     }
+
 }
 
 @Data
