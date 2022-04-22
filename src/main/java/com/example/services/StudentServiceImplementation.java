@@ -16,6 +16,7 @@ import com.example.repository.UserRepository;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -35,6 +36,9 @@ public class StudentServiceImplementation implements StudentService {
 
     @Autowired
     private SequenceGeneratorService sequenceGenerator;
+
+    //@Autowired
+    PasswordEncoder passwordEncoder;
 
     protected final Log log = LogFactory.getLog(getClass());
 
@@ -202,12 +206,37 @@ public class StudentServiceImplementation implements StudentService {
         // TODO Auto-generated method stub
         return applicationRepository.findByAppId(appId);
     }
-
-    public UserModel updateUser(UserModel user){
+    public UserModel updateUser(String nwId, UserModel user){
         //UserModel test = userRepository.findBynwId(nwId);
         //test.setPhoneNumber(user.getPhoneNumber());
         //test.setStreet(user.getStreet());
-        return userRepository.save(user);
+        UserModel user_to_update = userRepository.findBynwId(nwId);
+        user_to_update.setCity(user.getCity());
+        try {
+            user_to_update.setPassword(passwordEncoder.encode(user.getPassword()));
+        } catch (Exception e){
+            log.error("Failed to encode password " + e);
+
+        }
+        user_to_update.setStreet(user.getStreet());
+        user_to_update.setState(user.getState());
+        user_to_update.setZipCode(user.getZipCode());
+        user_to_update.setPhoneNumber(user.getPhoneNumber());
+
+        return userRepository.save(user_to_update);
+    }
+
+    @Override
+    public List<UserModel> getStudentWithApplication() {
+       List<UserModel> allApp = userRepository.findAll();
+       List<UserModel> result = new ArrayList<>();
+       for(UserModel user : allApp) {
+           if(user.getApplications().size() != 0) {
+               result.add(user);
+           }
+
+       }
+        return result;
     }
 
     

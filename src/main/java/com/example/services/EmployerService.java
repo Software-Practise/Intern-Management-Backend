@@ -7,9 +7,9 @@ import java.util.List;
 
 @Service
 public interface EmployerService {
-    EmployerModel getEmployer(String employerId);
+    EmployerModel getEmployer(Long employerId);
     List<EmployerModel> getEmployers();
-    String deleteEmployer(String employerId);
+    String deleteEmployer(Long employerId);
     String updateEmployer(EmployerModel employer);
     String addEmployer(EmployerModel employer);
 

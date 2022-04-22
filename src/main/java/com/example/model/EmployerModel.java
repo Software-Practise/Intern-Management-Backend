@@ -9,7 +9,7 @@ public class EmployerModel {
     
     @Id 
     
-    private Long id;
+    private Long empId;
     private String fName, lName;
     private String employerId;
 
@@ -24,10 +24,10 @@ public class EmployerModel {
     private String companyName;
 
     @PersistenceConstructor
-    public EmployerModel(Long id, String fName, String lName, String employerId, String street, 
+    public EmployerModel(Long empId, String fName, String lName, String employerId, String street, 
             String city, String state, String zipCode, String phoneNumber,
             String email, String companyName) {
-        this.id = id;
+        this.empId = empId;
         this.fName = fName;
         this.lName = lName;
         this.employerId = employerId;
@@ -41,10 +41,10 @@ public class EmployerModel {
         }
 
     public Long getId() {
-        return id;
+        return empId;
     }
     public void setId(Long id) {
-        this.id = id;
+        this.empId = id;
     }
     public String getfName() {
         return fName;

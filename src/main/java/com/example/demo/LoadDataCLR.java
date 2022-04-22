@@ -28,6 +28,7 @@ public class LoadDataCLR implements CommandLineRunner {
         logger.info("COMMAND LINE RUNNER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         //userService.clearDB();
 
+
         EmployerModel steveJ = new EmployerModel(new Random().nextLong(),"Steve", "Jobs", "stevej", "4312", "Apple St.", "Washington", "3223", "6234568383", "stevejobs@aol.com", "Yapple");
         UserModel travoltaj = new UserModel(new Random().nextLong(),"John", "Travolta", "travoltaj",  "travoltaj@nwmissouri.edu","Computer science", "1234", new ArrayList<>(), new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "Undergraduate");
         UserModel smithw = new UserModel( new Random().nextLong(),"Will", "Smith", "smithw",  "smithw@nwmissouri.edu","Computer science", "1234", new ArrayList<>(), new ArrayList<>(), "800 University Drive","Maryville", "Missouri", "64468", "(660) 123 4567", "Computer Science", "Undergraduate");

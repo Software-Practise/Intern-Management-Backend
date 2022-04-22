@@ -19,9 +19,11 @@ public class EmployerServiceImplementation implements EmployerService {
     protected final Log log = LogFactory.getLog(getClass());
 
     @Override
-    public EmployerModel getEmployer(String employerId) {
-        log.info("Retrieve client " + employerId + " from database");
-        return employerRepository.findByEmployerId(employerId);
+    public EmployerModel getEmployer(Long empId) {
+        log.info("Retrieve client " + empId + " from database");
+        EmployerModel res = employerRepository.findByEmpId(empId);
+        log.info(res.getfName());
+        return res;
     }
 
     @Override
@@ -31,7 +33,7 @@ public class EmployerServiceImplementation implements EmployerService {
     }
 
     @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
-    public String deleteEmployer(String employerId) {
+    public String deleteEmployer(Long employerId) {
         log.info("Delete " + employerId + " from database");
         employerRepository.deleteByEmployerId(employerId);
         return "Deleted employer";

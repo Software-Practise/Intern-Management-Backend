@@ -1,0 +1,57 @@
+[
+  {
+    "fname": "Rodeocean",
+    "lname": "",
+    "empId": "Rodeocean",
+    "email": "dukemcguire@rodeocean.com",
+    "street": "123 happy street",
+    "city": "Freetown",
+    "state": "Virginia",
+    "zipcode": 64468,
+    "phone": "+1 (944) 538-3600"
+  },
+  {
+    "fname": "Portica",
+    "lname": "",
+    "empId": "Portica",
+    "email": "dukemcguire@portica.com",
+    "street": "123 happy street",
+    "city": "Vernon",
+    "state": "Maine",
+    "zipcode": 64468,
+    "phone": "+1 (959) 519-3283"
+  },
+  {
+    "fname": "Rockabye",
+    "lname": "",
+    "empId": "Rockabye",
+    "email": "dukemcguire@rockabye.com",
+    "street": "123 happy street",
+    "city": "Grimsley",
+    "state": "South Dakota",
+    "zipcode": 64468,
+    "phone": "+1 (811) 513-3948"
+  },
+  {
+    "fname": "Zolar",
+    "lname": "",
+    "empId": "Zolar",
+    "email": "dukemcguire@zolar.com",
+    "street": "123 happy street",
+    "city": "Coinjock",
+    "state": "Utah",
+    "zipcode": 64468,
+    "phone": "+1 (939) 413-3941"
+  },
+  {
+    "fname": "Zytrax",
+    "lname": "",
+    "empId": "Zytrax",
+    "email": "dukemcguire@zytrax.com",
+    "street": "123 happy street",
+    "city": "Crown",
+    "state": "District Of Columbia",
+    "zipcode": 64468,
+    "phone": "+1 (878) 490-2539"
+  }
+]

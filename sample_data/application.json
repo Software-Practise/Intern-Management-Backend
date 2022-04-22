@@ -1,19 +1,5 @@
 [
-  {
-    "fname": "Levy",
-    "lname": "Bartlett",
-    "password": 12345678,
-    "nwid": "levybartlett@aquafire.com",
-    "email": "levybartlett@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
-      {
+    {
         "appTd": 779,
         "nwId": "levybartlett@aquafire.com",
         "status": "REJECTED",
@@ -48,30 +34,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (847) 476-3527",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Misty",
-    "lname": "Patrick",
-    "password": 12345678,
-    "nwid": "mistypatrick@aquafire.com",
-    "email": "mistypatrick@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 710,
         "nwId": "mistypatrick@aquafire.com",
@@ -107,30 +70,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (946) 550-2509",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Helga",
-    "lname": "Garrison",
-    "password": 12345678,
-    "nwid": "helgagarrison@aquafire.com",
-    "email": "helgagarrison@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 799,
         "nwId": "helgagarrison@aquafire.com",
@@ -148,30 +88,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (904) 504-2075",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Weaver",
-    "lname": "Hayden",
-    "password": 12345678,
-    "nwid": "weaverhayden@aquafire.com",
-    "email": "weaverhayden@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 470,
         "nwId": "weaverhayden@aquafire.com",
@@ -207,30 +124,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (890) 534-2584",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Leah",
-    "lname": "Jones",
-    "password": 12345678,
-    "nwid": "leahjones@aquafire.com",
-    "email": "leahjones@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 153,
         "nwId": "leahjones@aquafire.com",
@@ -248,30 +142,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (830) 503-2776",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Donaldson",
-    "lname": "Graves",
-    "password": 12345678,
-    "nwid": "donaldsongraves@aquafire.com",
-    "email": "donaldsongraves@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 886,
         "nwId": "donaldsongraves@aquafire.com",
@@ -307,30 +178,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (976) 570-3700",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Dorothy",
-    "lname": "Bernard",
-    "password": 12345678,
-    "nwid": "dorothybernard@aquafire.com",
-    "email": "dorothybernard@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 213,
         "nwId": "dorothybernard@aquafire.com",
@@ -366,30 +214,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (889) 589-2393",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "George",
-    "lname": "Farley",
-    "password": 12345678,
-    "nwid": "georgefarley@aquafire.com",
-    "email": "georgefarley@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 359,
         "nwId": "georgefarley@aquafire.com",
@@ -425,30 +250,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (898) 586-2766",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Farley",
-    "lname": "Lowe",
-    "password": 12345678,
-    "nwid": "farleylowe@aquafire.com",
-    "email": "farleylowe@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 105,
         "nwId": "farleylowe@aquafire.com",
@@ -484,30 +286,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (984) 476-3140",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Ebony",
-    "lname": "Mccullough",
-    "password": 12345678,
-    "nwid": "ebonymccullough@aquafire.com",
-    "email": "ebonymccullough@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 717,
         "nwId": "ebonymccullough@aquafire.com",
@@ -525,30 +304,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (859) 422-3607",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Velasquez",
-    "lname": "Miranda",
-    "password": 12345678,
-    "nwid": "velasquezmiranda@aquafire.com",
-    "email": "velasquezmiranda@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 530,
         "nwId": "velasquezmiranda@aquafire.com",
@@ -584,30 +340,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (940) 404-2845",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Green",
-    "lname": "Sanchez",
-    "password": 12345678,
-    "nwid": "greensanchez@aquafire.com",
-    "email": "greensanchez@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 195,
         "nwId": "greensanchez@aquafire.com",
@@ -625,30 +358,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (951) 440-2942",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Doyle",
-    "lname": "Wyatt",
-    "password": 12345678,
-    "nwid": "doylewyatt@aquafire.com",
-    "email": "doylewyatt@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 542,
         "nwId": "doylewyatt@aquafire.com",
@@ -666,30 +376,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (834) 415-3473",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Weber",
-    "lname": "Turner",
-    "password": 12345678,
-    "nwid": "weberturner@aquafire.com",
-    "email": "weberturner@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 626,
         "nwId": "weberturner@aquafire.com",
@@ -725,30 +412,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (809) 437-3532",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Vicki",
-    "lname": "Whitley",
-    "password": 12345678,
-    "nwid": "vickiwhitley@aquafire.com",
-    "email": "vickiwhitley@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 501,
         "nwId": "vickiwhitley@aquafire.com",
@@ -766,30 +430,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (865) 551-3054",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Burris",
-    "lname": "Kinney",
-    "password": 12345678,
-    "nwid": "burriskinney@aquafire.com",
-    "email": "burriskinney@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 461,
         "nwId": "burriskinney@aquafire.com",
@@ -825,30 +466,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (986) 481-3155",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "West",
-    "lname": "Dudley",
-    "password": 12345678,
-    "nwid": "westdudley@aquafire.com",
-    "email": "westdudley@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 307,
         "nwId": "westdudley@aquafire.com",
@@ -866,30 +484,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (832) 527-2766",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Leila",
-    "lname": "Holden",
-    "password": 12345678,
-    "nwid": "leilaholden@aquafire.com",
-    "email": "leilaholden@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 753,
         "nwId": "leilaholden@aquafire.com",
@@ -907,30 +502,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (819) 404-2003",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Marva",
-    "lname": "Ball",
-    "password": 12345678,
-    "nwid": "marvaball@aquafire.com",
-    "email": "marvaball@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 428,
         "nwId": "marvaball@aquafire.com",
@@ -948,30 +520,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (959) 552-2223",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Frankie",
-    "lname": "Cross",
-    "password": 12345678,
-    "nwid": "frankiecross@aquafire.com",
-    "email": "frankiecross@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 844,
         "nwId": "frankiecross@aquafire.com",
@@ -1007,30 +556,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (874) 443-3915",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Marsh",
-    "lname": "Campos",
-    "password": 12345678,
-    "nwid": "marshcampos@aquafire.com",
-    "email": "marshcampos@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 263,
         "nwId": "marshcampos@aquafire.com",
@@ -1048,30 +574,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (953) 572-3231",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Hutchinson",
-    "lname": "Moran",
-    "password": 12345678,
-    "nwid": "hutchinsonmoran@aquafire.com",
-    "email": "hutchinsonmoran@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 826,
         "nwId": "hutchinsonmoran@aquafire.com",
@@ -1107,30 +610,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (869) 412-2161",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Myrtle",
-    "lname": "Collins",
-    "password": 12345678,
-    "nwid": "myrtlecollins@aquafire.com",
-    "email": "myrtlecollins@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 615,
         "nwId": "myrtlecollins@aquafire.com",
@@ -1148,30 +628,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (852) 567-3069",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Pugh",
-    "lname": "Waters",
-    "password": 12345678,
-    "nwid": "pughwaters@aquafire.com",
-    "email": "pughwaters@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 600,
         "nwId": "pughwaters@aquafire.com",
@@ -1207,30 +664,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (854) 445-2572",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Margery",
-    "lname": "Morrison",
-    "password": 12345678,
-    "nwid": "margerymorrison@aquafire.com",
-    "email": "margerymorrison@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 437,
         "nwId": "margerymorrison@aquafire.com",
@@ -1248,30 +682,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (908) 500-2188",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Stevens",
-    "lname": "Martinez",
-    "password": 12345678,
-    "nwid": "stevensmartinez@aquafire.com",
-    "email": "stevensmartinez@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 896,
         "nwId": "stevensmartinez@aquafire.com",
@@ -1289,30 +700,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (976) 499-2118",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Trina",
-    "lname": "Simmons",
-    "password": 12345678,
-    "nwid": "trinasimmons@aquafire.com",
-    "email": "trinasimmons@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 492,
         "nwId": "trinasimmons@aquafire.com",
@@ -1330,30 +718,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (876) 429-2475",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Dennis",
-    "lname": "Key",
-    "password": 12345678,
-    "nwid": "denniskey@aquafire.com",
-    "email": "denniskey@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 866,
         "nwId": "denniskey@aquafire.com",
@@ -1371,30 +736,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (834) 544-3541",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Manuela",
-    "lname": "Shepard",
-    "password": 12345678,
-    "nwid": "manuelashepard@aquafire.com",
-    "email": "manuelashepard@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 383,
         "nwId": "manuelashepard@aquafire.com",
@@ -1430,30 +772,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (961) 418-2301",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Vasquez",
-    "lname": "Greene",
-    "password": 12345678,
-    "nwid": "vasquezgreene@aquafire.com",
-    "email": "vasquezgreene@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 450,
         "nwId": "vasquezgreene@aquafire.com",
@@ -1471,30 +790,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (905) 572-3583",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Chasity",
-    "lname": "King",
-    "password": 12345678,
-    "nwid": "chasityking@aquafire.com",
-    "email": "chasityking@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 519,
         "nwId": "chasityking@aquafire.com",
@@ -1512,30 +808,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (960) 469-2704",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Strong",
-    "lname": "Ryan",
-    "password": 12345678,
-    "nwid": "strongryan@aquafire.com",
-    "email": "strongryan@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 858,
         "nwId": "strongryan@aquafire.com",
@@ -1553,30 +826,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (966) 562-3853",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Angelica",
-    "lname": "Joyner",
-    "password": 12345678,
-    "nwid": "angelicajoyner@aquafire.com",
-    "email": "angelicajoyner@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 397,
         "nwId": "angelicajoyner@aquafire.com",
@@ -1612,30 +862,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (887) 549-3093",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Craig",
-    "lname": "Baker",
-    "password": 12345678,
-    "nwid": "craigbaker@aquafire.com",
-    "email": "craigbaker@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 414,
         "nwId": "craigbaker@aquafire.com",
@@ -1671,30 +898,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (919) 430-3728",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Angelia",
-    "lname": "Zimmerman",
-    "password": 12345678,
-    "nwid": "angeliazimmerman@aquafire.com",
-    "email": "angeliazimmerman@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 590,
         "nwId": "angeliazimmerman@aquafire.com",
@@ -1730,30 +934,7 @@
         "paid": false,
         "unpaid": true,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (872) 537-2707",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Lynda",
-    "lname": "Rowland",
-    "password": 12345678,
-    "nwid": "lyndarowland@aquafire.com",
-    "email": "lyndarowland@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 365,
         "nwId": "lyndarowland@aquafire.com",
@@ -1789,30 +970,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (938) 589-2966",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Katherine",
-    "lname": "Barrett",
-    "password": 12345678,
-    "nwid": "katherinebarrett@aquafire.com",
-    "email": "katherinebarrett@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 146,
         "nwId": "katherinebarrett@aquafire.com",
@@ -1830,30 +988,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (976) 521-2646",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Gould",
-    "lname": "Noel",
-    "password": 12345678,
-    "nwid": "gouldnoel@aquafire.com",
-    "email": "gouldnoel@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 616,
         "nwId": "gouldnoel@aquafire.com",
@@ -1871,30 +1006,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (832) 486-3278",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Estella",
-    "lname": "Park",
-    "password": 12345678,
-    "nwid": "estellapark@aquafire.com",
-    "email": "estellapark@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 510,
         "nwId": "estellapark@aquafire.com",
@@ -1912,30 +1024,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (804) 473-2591",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Alisha",
-    "lname": "Hines",
-    "password": 12345678,
-    "nwid": "alishahines@aquafire.com",
-    "email": "alishahines@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 287,
         "nwId": "alishahines@aquafire.com",
@@ -1971,30 +1060,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (980) 495-2075",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Kelly",
-    "lname": "Baldwin",
-    "password": 12345678,
-    "nwid": "kellybaldwin@aquafire.com",
-    "email": "kellybaldwin@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 873,
         "nwId": "kellybaldwin@aquafire.com",
@@ -2012,30 +1078,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (825) 516-3340",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Mariana",
-    "lname": "Santos",
-    "password": 12345678,
-    "nwid": "marianasantos@aquafire.com",
-    "email": "marianasantos@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 242,
         "nwId": "marianasantos@aquafire.com",
@@ -2053,30 +1096,7 @@
         "paid": false,
         "unpaid": false,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (979) 466-2563",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Camille",
-    "lname": "Marquez",
-    "password": 12345678,
-    "nwid": "camillemarquez@aquafire.com",
-    "email": "camillemarquez@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 250,
         "nwId": "camillemarquez@aquafire.com",
@@ -2094,30 +1114,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (856) 467-3559",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Campbell",
-    "lname": "Scott",
-    "password": 12345678,
-    "nwid": "campbellscott@aquafire.com",
-    "email": "campbellscott@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 271,
         "nwId": "campbellscott@aquafire.com",
@@ -2153,30 +1150,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zytrax"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (810) 452-2527",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Gabrielle",
-    "lname": "Snow",
-    "password": 12345678,
-    "nwid": "gabriellesnow@aquafire.com",
-    "email": "gabriellesnow@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 228,
         "nwId": "gabriellesnow@aquafire.com",
@@ -2194,30 +1168,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Portica"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (964) 467-2085",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Barbara",
-    "lname": "Charles",
-    "password": 12345678,
-    "nwid": "barbaracharles@aquafire.com",
-    "email": "barbaracharles@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 749,
         "nwId": "barbaracharles@aquafire.com",
@@ -2235,30 +1186,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Rockabye"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (932) 545-2772",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Joanne",
-    "lname": "Hanson",
-    "password": 12345678,
-    "nwid": "joannehanson@aquafire.com",
-    "email": "joannehanson@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 295,
         "nwId": "joannehanson@aquafire.com",
@@ -2294,30 +1222,7 @@
         "paid": true,
         "unpaid": false,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (862) 546-2696",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Woodard",
-    "lname": "Downs",
-    "password": 12345678,
-    "nwid": "woodarddowns@aquafire.com",
-    "email": "woodarddowns@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 484,
         "nwId": "woodarddowns@aquafire.com",
@@ -2335,30 +1240,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Zolar"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (907) 504-2826",
-    "major": "Computer Science",
-    "level": "undergraduate"
-  },
-  {
-    "fname": "Everett",
-    "lname": "Jimenez",
-    "password": 12345678,
-    "nwid": "everettjimenez@aquafire.com",
-    "email": "everettjimenez@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 334,
         "nwId": "everettjimenez@aquafire.com",
@@ -2394,30 +1276,7 @@
         "paid": true,
         "unpaid": true,
         "empId": "Rodeocean"
-      }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (841) 555-2911",
-    "major": "Computer Science",
-    "level": "graduate"
-  },
-  {
-    "fname": "Shelby",
-    "lname": "Wolf",
-    "password": 12345678,
-    "nwid": "shelbywolf@aquafire.com",
-    "email": "shelbywolf@aquafire.com",
-    "dept": "Computer Science",
-    "roles": [
-      {
-        "id": 1703431468665194500,
-        "name": "ROLE_USER"
-      }
-    ],
-    "applications": [
+      },
       {
         "appTd": 604,
         "nwId": "shelbywolf@aquafire.com",
@@ -2454,13 +1313,11 @@
         "unpaid": false,
         "empId": "Rodeocean"
       }
-    ],
-    "street": "800 University Drive",
-    "city": "Maryville",
-    "state": "Missouri",
-    "zipcode": 64468,
-    "phone": "+1 (856) 426-2542",
-    "major": "Computer Science",
-    "level": "graduate"
-  }
+
+
+
+
+
+
+
 ]
