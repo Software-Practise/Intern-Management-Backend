@@ -16,9 +16,11 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer.UserInfoEndpointConfig;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -122,6 +124,12 @@ public class StudentResource {
     public ResponseEntity<?> getApps(@PathVariable String nwId){
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/application/{appId}").toUriString());
         return ResponseEntity.created(uri).body(studentService.getApps(nwId));
+    }
+
+    @PostMapping("/students/{nwid}/update")
+    public ResponseEntity<?> updateUser(@PathVariable String nwid, @RequestBody UserModel user){
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/students/info/{nwId").toUriString());
+        return ResponseEntity.created(uri).body(studentService.updateUser(nwid, user));
     }
 
 }
