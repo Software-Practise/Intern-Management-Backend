@@ -25,13 +25,11 @@ public class EmployerResource {
     private EmployerService employerService;
 
     @GetMapping("/employers")
-    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
     public ResponseEntity<List<EmployerModel>> getEmployer() {
         return ResponseEntity.ok().body(employerService.getEmployers());
     }
 
     @GetMapping("/employers/{empId}")
-    @PreAuthorize("hasAnyRole('ROLE_FACULTY', 'ROLE_ADMIN')")
     public ResponseEntity<EmployerModel> getEmployer(@PathVariable Long empId) {
         return ResponseEntity.ok().body(employerService.getEmployer(empId));
     }
